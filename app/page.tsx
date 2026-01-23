@@ -1,84 +1,53 @@
 import Link from "next/link";
-import { BookOpen, Sprout, Coins, Landmark, Swords, Newspaper, Panda } from "lucide-react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
+import { BookOpen } from "lucide-react";
+import { NAV_ITEMS } from "../lib/nav";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "../components/ui/card";
 
-type Section = {
-  id: string;
-  title: string;
-  description: string;
-  href: string;
-  icon: React.ComponentType<{ className?: string }>;
-  accentClass: string;
+const starterSection = {
+  id: "getting-started",
+  title: "Start here",
+  label: "Start here",
+  description: "Quick links for new & returning players.",
+  href: "#getting-started",
+  icon: BookOpen,
+  accentClass: "accent-gold",
+} as const;
+
+// Descriptions for the cards grid (Home only)
+const homeDescriptions: Record<string, string> = {
+  "/early": "Structured start: priorities, money making, and must-have resources.",
+  "/mid": "Optimization phase: scale your setup and pick efficient lanes.",
+  "/end": "Meta + efficiency: high-end methods, updates, and min-max resources.",
+  "/tricks": "Small habits and mechanics tips that make you progress faster.",
+  "/mods": "Curated essential mods (QoL + performance) and safe sources.",
+  "/garden": "Crop milestones, FF basics, best tools & profit checks.",
+  "/money": "Farming, mining, flipping, mayor — pick your method.",
+  "/dungeons": "Progression, classes, gear paths, tutorials.",
+  "/mayor": "What’s happening, what to prep, where to track it.",
+  "/news": "Patch notes, what changed, who it affects.",
+  "/shards": "Best locations, drops, and tracking tools.",
 };
-
-const sections: Section[] = [
-  {
-    id: "getting-started",
-    title: "Start here",
-    description: "Quick links for new & returning players.",
-    href: "#getting-started",
-    icon: BookOpen,
-    accentClass: "accent-gold",
-  },
-  {
-    id: "garden",
-    title: "Garden",
-    description: "Crop milestones, FF basics, best tools & profit checks.",
-    href: "/garden",
-    icon: Sprout,
-    accentClass: "accent-garden",
-  },
-  {
-    id: "money",
-    title: "Money making",
-    description: "Farming, mining, flipping, mayor — pick your method.",
-    href: "/money",
-    icon: Coins,
-    accentClass: "accent-money",
-  },
-  {
-    id: "dungeons",
-    title: "Dungeons",
-    description: "Progression, classes, gear paths, meta guides.",
-    href: "/dungeons",
-    icon: Swords,
-    accentClass: "accent-dungeons",
-  },
-  {
-    id: "events",
-    title: "Mayors & Events",
-    description: "What’s happening, what to prep, where to track it.",
-    href: "/mayor",
-    icon: Landmark,
-    accentClass: "accent-mayor",
-  },
-  {
-    id: "news",
-    title: "News & patches",
-    description: "Patch notes, what changed, who it affects.",
-    href: "/news",
-    icon: Newspaper,
-    accentClass: "accent-news",
-  },
-    {
-        id: "shards",
-        title: "Shards & Hunting",
-        description: "Best locations, drops, and tracking tools.",
-        href: "/shards",
-        icon: Panda,
-        accentClass: "accent-shards",
-    }
-];
 
 export default function Page() {
   return (
     <main className="mx-auto max-w-6xl px-4 py-10">
       <header className="mb-8">
-        <p className="text-xs tracking-[0.25em] text-muted-foreground">HYPIXEL SKYBLOCK</p>
-        <h1 className="mt-2 text-2xl font-heading tracking-wide sm:text-4xl">Resource Hub</h1>
+        <p className="text-xs tracking-[0.25em] text-muted-foreground">
+          HYPIXEL SKYBLOCK
+        </p>
+        <h1 className="mt-2 text-2xl font-heading tracking-wide sm:text-4xl">
+          Resource Hub
+        </h1>
         <p className="mt-3 max-w-2xl text-sm text-muted-foreground sm:text-base">
-          You don’t need another dashboard. You need the right link, at the right time.
-          Pick a topic and jump straight to the best tools, guides, and checklists.
+          You don’t need another dashboard. You need the right link, at the right
+          time. Pick a topic and jump straight to the best tools, guides, and
+          checklists.
         </p>
       </header>
 
@@ -89,14 +58,14 @@ export default function Page() {
               Topics
             </p>
             <nav className="flex flex-col gap-1">
-              {sections.map((s) => (
+              {[starterSection, ...NAV_ITEMS].map((s) => (
                 <Link
-                  key={s.id}
+                  key={s.href}
                   href={s.href}
                   className="group flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-foreground/90 hover:bg-muted/40"
                 >
                   <s.icon className={`h-4 w-4 ${s.accentClass}`} />
-                  <span>{s.title}</span>
+                  <span>{s.label}</span>
                 </Link>
               ))}
             </nav>
@@ -111,17 +80,19 @@ export default function Page() {
         </aside>
 
         <section className="grid gap-4 sm:grid-cols-2">
-          {sections.filter((s) => s.href !== "#getting-started").map((s) => (
-            <Link key={s.id} href={s.href} className="group">
+          {NAV_ITEMS.map((n) => (
+            <Link key={n.href} href={n.href} className="group">
               <Card className="p-0 transition hover:-translate-y-0.5 hover:bg-card/80">
                 <CardHeader>
                   <div className="flex items-start justify-between gap-4">
                     <div>
-                      <CardTitle className="text-lg">{s.title}</CardTitle>
-                      <CardDescription className="mt-2">{s.description}</CardDescription>
+                      <CardTitle className="text-lg">{n.label}</CardTitle>
+                      <CardDescription className="mt-2">
+                        {homeDescriptions[n.href] ?? ""}
+                      </CardDescription>
                     </div>
                     <div className="rounded-xl border bg-muted/20 p-2">
-                      <s.icon className={`h-5 w-5 ${s.accentClass}`} />
+                      <n.icon className={`h-5 w-5 ${n.accentClass}`} />
                     </div>
                   </div>
                 </CardHeader>
@@ -138,7 +109,9 @@ export default function Page() {
             <Card>
               <CardHeader>
                 <CardTitle className="text-lg">Start here</CardTitle>
-                <CardDescription>Common quick checks and where to go.</CardDescription>
+                <CardDescription>
+                  Common quick checks and where to go.
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid gap-3 sm:grid-cols-2">
@@ -149,7 +122,9 @@ export default function Page() {
                     rel="noreferrer"
                   >
                     <div className="text-sm font-semibold">Need your stats?</div>
-                    <div className="mt-1 text-xs text-muted-foreground">SkyCrypt (external)</div>
+                    <div className="mt-1 text-xs text-muted-foreground">
+                      SkyCrypt (external)
+                    </div>
                   </a>
                   <a
                     className="rounded-xl border bg-muted/20 p-4 hover:bg-muted/30"
@@ -157,8 +132,12 @@ export default function Page() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="text-sm font-semibold">Checking prices / flipping?</div>
-                    <div className="mt-1 text-xs text-muted-foreground">COFL (external)</div>
+                    <div className="text-sm font-semibold">
+                      Checking prices / flipping?
+                    </div>
+                    <div className="mt-1 text-xs text-muted-foreground">
+                      COFL (external)
+                    </div>
                   </a>
                 </div>
               </CardContent>

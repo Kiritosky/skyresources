@@ -1,25 +1,73 @@
 import { DocsLayout } from "../../components/docs-layout";
-import { Checklist } from "../../components/checklist";
+import { GuideSection } from "../../components/guide-section";
 import { ResourceLinks } from "../../components/resource-links";
 
 export default function DungeonsPage() {
   return (
     <DocsLayout
       title="Dungeons"
-      description="Progression, class basics, and where to find the best up-to-date meta resources."
+      description="A beginner-friendly Dungeons hub: how to start, what to focus on, and where to learn the meta without information overload."
     >
-      <Checklist
-        title="Quick progression checks"
-        items={[
-          { title: "Class + role", detail: "Pick 1 main class and build around it." },
-          { title: "Gear tier", detail: "Make sure your gear matches your floor." },
-          { title: "Talisman / MP", detail: "Low MP is the #1 hidden issue for damage/tankiness." },
-          { title: "Dungeon basics", detail: "Secrets routes and clearing discipline matter more than upgrades." },
-        ]}
-      />
+      <GuideSection title="Start here (absolute basics)">
+        <p>
+          Dungeons progression is less about buying one expensive item and more about building a
+          consistent setup: class role, survivability, and clean runs.
+        </p>
+        <ul>
+          <li>
+            <strong>Pick one main class</strong> for now. Switching constantly slows learning.
+          </li>
+          <li>
+            <strong>Don’t skip fundamentals</strong>: room clearing, positioning, and basic secrets.
+          </li>
+          <li>
+            <strong>Gear should match your floor</strong>: being under-geared wastes time (and parties).
+          </li>
+        </ul>
+      </GuideSection>
+
+      <GuideSection title="Class roles (what people expect)">
+        <ul>
+          <li>
+            <strong>Healer</strong>: consistency and survivability; great for learning.
+          </li>
+          <li>
+            <strong>Tank</strong>: learn damage patterns and positioning; makes runs stable.
+          </li>
+          <li>
+            <strong>Mage</strong>: damage + clearing; needs mana management and basic route discipline.
+          </li>
+          <li>
+            <strong>Berserk</strong>: damage + cleanup; learn target priority and survivability.
+          </li>
+          <li>
+            <strong>Archer</strong>: team-dependent and gear-sensitive; very strong later.
+          </li>
+        </ul>
+      </GuideSection>
+
+      <GuideSection
+        title="Progression checklist (what to improve first)"
+        description="These upgrades usually give the biggest effect for the least confusion."
+      >
+        <ol>
+          <li>
+            <strong>Magical Power (MP)</strong> and basic tuning.
+          </li>
+          <li>
+            <strong>Survivability</strong>: don’t build glass-cannon if you’re dying every run.
+          </li>
+          <li>
+            <strong>Clear speed</strong>: consistent room clear beats occasional big hits.
+          </li>
+          <li>
+            <strong>Secrets</strong>: learn a few rooms at a time; don’t try to memorize everything.
+          </li>
+        </ol>
+      </GuideSection>
 
       <ResourceLinks
-        title="Best external links"
+        title="Essential links"
         links={[
           {
             title: "SkyCrypt",
@@ -28,15 +76,34 @@ export default function DungeonsPage() {
             tag: "Stats",
           },
           {
-            title: "Hypixel Wiki (Dungeons)",
+            title: "Hypixel Wiki (Catacombs)",
             description: "Reference for items, floors, and mechanics.",
             href: "https://wiki.hypixel.net/Catacombs",
             tag: "Reference",
           },
+        ]}
+      />
+
+      <ResourceLinks
+        title="Tutorials × YouTube"
+        description="Direct intent searches (easier to find the right guide fast)."
+        links={[
           {
-            title: "Community meta guides",
-            description: "Add curated docs/videos here.",
-            href: "https://www.youtube.com/results?search_query=hypixel+skyblock+dungeons+guide",
+            title: "Dungeons Beginner Guide",
+            description: "Search: first steps, class choice, basic gear.",
+            href: "https://www.youtube.com/results?search_query=hypixel+skyblock+dungeons+beginner+guide",
+            tag: "YouTube",
+          },
+          {
+            title: "Secrets routes (beginner)",
+            description: "Search: basic room secrets, routes, practice.",
+            href: "https://www.youtube.com/results?search_query=hypixel+skyblock+secrets+routes+beginner",
+            tag: "YouTube",
+          },
+          {
+            title: "Class guides (Mage/Bers/Tank/Healer/Archer)",
+            description: "Search: role expectations and progression.",
+            href: "https://www.youtube.com/results?search_query=hypixel+skyblock+dungeons+class+guide",
             tag: "YouTube",
           },
         ]}

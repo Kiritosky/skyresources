@@ -1,14 +1,5 @@
 import Link from "next/link";
-import {Sprout, Coins, Swords, Landmark, Newspaper, Panda} from "lucide-react";
-
-const nav = [
-  { href: "/garden", label: "Garden", icon: Sprout, accentClass: "accent-garden" },
-  { href: "/money", label: "Money", icon: Coins, accentClass: "accent-money" },
-  { href: "/dungeons", label: "Dungeons", icon: Swords, accentClass: "accent-dungeons" },
-  { href: "/mayor", label: "Mayors & Events", icon: Landmark, accentClass: "accent-mayor" },
-  { href: "/news", label: "News", icon: Newspaper, accentClass: "accent-news" },
-    { href: "/shards",label: "Shards & Hunting", icon: Panda, accentClass: "accent-shards" },
-] as const;
+import { NAV_ITEMS } from "../lib/nav";
 
 export function DocsLayout({
   title,
@@ -27,7 +18,7 @@ export function DocsLayout({
             Topics
           </p>
           <nav className="flex flex-col gap-1">
-            {nav.map((n) => (
+            {NAV_ITEMS.map((n) => (
               <Link
                 key={n.href}
                 href={n.href}
