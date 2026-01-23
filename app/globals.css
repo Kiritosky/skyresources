@@ -17,8 +17,9 @@
   --color-garden: #34d399;
   --color-money: #f6c453;
   --color-dungeons: #a78bfa;
-  --color-events: #60a5fa;
+  --color-mayor: #60a5fa;
   --color-news: #f472b6;
+    --color-shards: #38bdf8;
 
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -145,12 +146,15 @@
   .accent-dungeons {
     color: var(--color-dungeons);
   }
-  .accent-events {
-    color: var(--color-events);
+  .accent-mayor {
+    color: var(--color-mayor);
   }
   .accent-news {
     color: var(--color-news);
   }
+    .accent-shards {
+        color: var(--color-shards);
+    }
 }
 
 /* Default to dark like a SkyBlock hub */

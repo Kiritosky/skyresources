@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Inter, Orbitron } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
-import { SiteHeader } from "@/components/site-header";
+import { SiteHeader } from "../components/site-header";
 
 const inter = Inter({
     variable: "--font-inter",

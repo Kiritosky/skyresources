@@ -1,4 +1,10 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "./ui/card";
 
 export type ResourceLink = {
   title: string;
@@ -35,7 +41,9 @@ export function ResourceLinks({
               <div className="flex items-start justify-between gap-3">
                 <div>
                   <div className="text-sm font-semibold">{l.title}</div>
-                  <div className="mt-1 text-xs text-muted-foreground">{l.description}</div>
+                  <div className="mt-1 text-xs text-muted-foreground">
+                    {l.description}
+                  </div>
                 </div>
                 {l.tag ? (
                   <span className="rounded-full border bg-background/40 px-2 py-0.5 text-[10px] text-muted-foreground">

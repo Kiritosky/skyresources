@@ -1,6 +1,6 @@
-import { DocsLayout } from "@/components/docs-layout";
-import { Checklist } from "@/components/checklist";
-import { ResourceLinks } from "@/components/resource-links";
+import { DocsLayout } from "../../components/docs-layout";
+import { Checklist } from "../../components/checklist";
+import { ResourceLinks } from "../../components/resource-links";
 
 export default function MoneyPage() {
   return (
@@ -26,7 +26,7 @@ export default function MoneyPage() {
           {
             title: "COFL",
             description: "Flips, item history, and market tools.",
-            href: "https://coflnet.com/",
+            href: "https://sky.coflnet.com/",
             tag: "Economy",
           },
           {

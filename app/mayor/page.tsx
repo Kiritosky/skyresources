@@ -1,6 +1,6 @@
-import { DocsLayout } from "@/components/docs-layout";
-import { Checklist } from "@/components/checklist";
-import { ResourceLinks } from "@/components/resource-links";
+import { DocsLayout } from "../../components/docs-layout";
+import { Checklist } from "../../components/checklist";
+import { ResourceLinks } from "../../components/resource-links";
 
 export default function EventsPage() {
   return (

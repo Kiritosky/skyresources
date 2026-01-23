@@ -1,6 +1,6 @@
-import { DocsLayout } from "@/components/docs-layout";
-import { Checklist } from "@/components/checklist";
-import { ResourceLinks } from "@/components/resource-links";
+import { DocsLayout } from "../../components/docs-layout";
+import { Checklist } from "../../components/checklist";
+import { ResourceLinks } from "../../components/resource-links";
 
 export default function GardenPage() {
   return (
@@ -32,7 +32,7 @@ export default function GardenPage() {
           {
             title: "COFL",
             description: "Check market prices and profitability context.",
-            href: "https://coflnet.com/",
+            href: "https://sky.coflnet.com/",
             tag: "Economy",
           },
           {

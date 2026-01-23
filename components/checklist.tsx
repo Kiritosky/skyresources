@@ -1,4 +1,10 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "./ui/card";
 
 export type ChecklistItem = {
   title: string;
@@ -26,7 +32,9 @@ export function Checklist({
             <li key={it.title} className="rounded-xl border bg-muted/15 p-3">
               <div className="text-sm font-semibold">{it.title}</div>
               {it.detail ? (
-                <div className="mt-1 text-xs text-muted-foreground">{it.detail}</div>
+                <div className="mt-1 text-xs text-muted-foreground">
+                  {it.detail}
+                </div>
               ) : null}
             </li>
           ))}

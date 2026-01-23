@@ -1,5 +1,5 @@
-import { DocsLayout } from "@/components/docs-layout";
-import { ResourceLinks } from "@/components/resource-links";
+import { DocsLayout } from "../../components/docs-layout";
+import { ResourceLinks } from "../../components/resource-links";
 
 export default function NewsPage() {
   return (

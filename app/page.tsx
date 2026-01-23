@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { BookOpen, Sprout, Coins, Landmark, Swords, Newspaper } from "lucide-react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { BookOpen, Sprout, Coins, Landmark, Swords, Newspaper, Panda } from "lucide-react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
 
 type Section = {
   id: string;
@@ -31,7 +31,7 @@ const sections: Section[] = [
   {
     id: "money",
     title: "Money making",
-    description: "Farming, mining, flipping, events — pick your method.",
+    description: "Farming, mining, flipping, mayor — pick your method.",
     href: "/money",
     icon: Coins,
     accentClass: "accent-money",
@@ -48,9 +48,9 @@ const sections: Section[] = [
     id: "events",
     title: "Mayors & Events",
     description: "What’s happening, what to prep, where to track it.",
-    href: "/events",
+    href: "/mayor",
     icon: Landmark,
-    accentClass: "accent-events",
+    accentClass: "accent-mayor",
   },
   {
     id: "news",
@@ -60,6 +60,14 @@ const sections: Section[] = [
     icon: Newspaper,
     accentClass: "accent-news",
   },
+    {
+        id: "shards",
+        title: "Shards & Hunting",
+        description: "Best locations, drops, and tracking tools.",
+        href: "/shards",
+        icon: Panda,
+        accentClass: "accent-shards",
+    }
 ];
 
 export default function Page() {
@@ -145,7 +153,7 @@ export default function Page() {
                   </a>
                   <a
                     className="rounded-xl border bg-muted/20 p-4 hover:bg-muted/30"
-                    href="https://coflnet.com/"
+                    href="https://sky.coflnet.com/"
                     target="_blank"
                     rel="noreferrer"
                   >
