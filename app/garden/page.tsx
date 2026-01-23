@@ -63,6 +63,12 @@ export default function GardenPage() {
             href: "https://wiki.hypixel.net/Garden",
             tag: "Reference",
           },
+            {
+                title: "Sky Mutations",
+                description: "Plan and optimize your crop mutations.",
+                href: "https://skymutations.eu/",
+                tag: "Planning",
+            },
         ]}
       />
 
