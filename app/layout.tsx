@@ -23,7 +23,7 @@ const orbitron = Orbitron({
 export const metadata: Metadata = {
     title: "Skyblock Resource Hub",
     description:
-        "Ressourcen, Guides und Live-Updates für Hypixel SkyBlock — Shards, Garden, Tutorials und mehr.",
+        "Resources, guides, and live updates for Hypixel SkyBlock — shards, Garden, tutorials, and more.",
 };
 
 export default function RootLayout({

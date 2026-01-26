@@ -6,52 +6,54 @@ export default function MiningPage() {
   return (
     <DocsLayout
       title="Mining"
-      description="Ein klarer, praxisnaher Überblick: HotM-Pfad, Powder, Gear-Progression und wie du dir die beste Mining-Methode aussuchst."
+      description="A clear, practical overview: HotM pathing, powder, gear progression, and how to pick the best mining method for you."
     >
-      <GuideSection title="Kurzüberblick (was du wirklich brauchst)">
+      <GuideSection title="Quick overview (what you actually need)">
         <ul>
           <li>
-            <strong>HotM auf 10</strong> bringen (ohne das sind viele Upgrades/Setups nicht sinnvoll).
+            <strong>Get HotM 10</strong> (without it, many upgrades/setups aren’t worth it).
           </li>
           <li>
-            <strong>Powder</strong> ist der größte Multiplikator für Rates (Speed/Fortune/Procs).
+            <strong>Powder</strong> is the biggest multiplier for rates (speed/fortune/procs).
           </li>
           <li>
-            <strong>Gear stufenweise upgraden</strong> (Armor + Tool + Pet), statt alles auf einmal.
+            <strong>Upgrade gear step-by-step</strong> (armor + tool + pet), instead of trying to buy everything at once.
           </li>
           <li>
-            <strong>Methode wählen</strong>: Crystal Hollows (Gems) vs. Glacite Tunnels vs. DM-Diamonds usw.
-          </li>
-        </ul>
-      </GuideSection>
-
-      <GuideSection title="Heart of the Mountain (HotM)" description="Dein Skill-Tree für Mining. Erst freischalten, dann hochziehen.">
-        <p>
-          Nachdem du <strong>Rhys 15× ein beliebiges Enchanted Mining-Item</strong> gibst, schaltest du die
-          <strong> Dwarven Mines</strong> frei – inklusive <strong>Heart of the Mountain</strong>. Für ernsthafte Money-Rates
-          solltest du HotM langfristig auf <strong>Tier 10</strong> bringen.
-        </p>
-      </GuideSection>
-
-      <GuideSection title="HotM upgraden (XP schnell & sinnvoll)">
-        <ul>
-          <li>
-            <strong>Tier 1–7:</strong> Commissions in den <strong>Dwarven Mines</strong> (einfacher/geradliniger). Crystal Hollows
-            geht auch, wenn’s dir mehr Spaß macht.
-          </li>
-          <li>
-            <strong>Tier 7–10:</strong> Commissions in den <strong>Glacite Tunnels</strong>.
+            <strong>Pick a method</strong>: Crystal Hollows (gems) vs. Glacite Tunnels vs. Dwarven Mines diamonds, etc.
           </li>
         </ul>
       </GuideSection>
 
       <GuideSection
-        title="Tree Path (Perks, auf die du achten solltest)"
-        description="Für Commissions ist nicht jeder Perk wichtig – aber ein paar sind konstant stark."
+        title="Heart of the Mountain (HotM)"
+        description="Your mining skill tree. Unlock it first, then level it efficiently."
       >
         <p>
-          Je nach Mining-Methode (Gems, Mithril, Glacite usw.) gibt es optimale Skill-Tree-Pfade. Während du nur
-          HotM-XP farmst, reichen meist solide Allround-Perks.
+          After you give <strong>Rhys 15× any enchanted mining item</strong>, you unlock the <strong>Dwarven Mines</strong> — including
+          <strong> Heart of the Mountain</strong>. For serious profit/hour, plan to push HotM to <strong>Tier 10</strong> long-term.
+        </p>
+      </GuideSection>
+
+      <GuideSection title="Leveling HotM (fast & efficient XP)">
+        <ul>
+          <li>
+            <strong>Tier 1–7:</strong> Commissions in the <strong>Dwarven Mines</strong> (simple and straightforward). Crystal Hollows also
+            works if you enjoy it more.
+          </li>
+          <li>
+            <strong>Tier 7–10:</strong> Commissions in the <strong>Glacite Tunnels</strong>.
+          </li>
+        </ul>
+      </GuideSection>
+
+      <GuideSection
+        title="Tree pathing (perks to prioritize)"
+        description="Not every perk matters for commissions — but a few are consistently strong."
+      >
+        <p>
+          The best skill tree path depends on your method (gems, mithril, glacite, etc.). While you’re mainly farming HotM XP,
+          solid all-round perks are usually enough.
         </p>
         <ul>
           <li>
@@ -64,156 +66,158 @@ export default function MiningPage() {
             <strong>Titanium Insanium</strong>
           </li>
           <li>
-            <strong>Mining Speed / Mining Fortune</strong> sowie Perks, die <strong>extra Powder</strong> geben
+            <strong>Mining Speed / Mining Fortune</strong> plus perks that give <strong>extra powder</strong>
           </li>
         </ul>
       </GuideSection>
 
       <GuideSection
         title="Powder (Mithril / Gemstone / Glacite)"
-        description="Powder entscheidet über deine Rates – du kannst früher starten, aber es skaliert brutal."
+        description="Powder decides your rates — you can start earlier, but it scales hard."
       >
         <p>
-          Jede HotM-Perk-Stufe kostet Powder. Du kannst zwar schon mit weniger Powder starten, aber das drückt die
-          Rates spürbar. Eine oft genannte Zielgröße ist etwa <strong>10m / 20m / 20m</strong> (Mithril / Gemstone /
-          Glacite) – wobei du <strong>Glacite Powder</strong> nur für Glacite-Tunnels-Perks brauchst.
+          Every HotM perk level costs powder. You can start with less, but it noticeably lowers your rates. A commonly quoted
+          target is around <strong>10m / 20m / 20m</strong> (Mithril / Gemstone / Glacite) — and you only need <strong>Glacite Powder</strong>
+          for Glacite Tunnels perks.
         </p>
         <p>
-          Für einige permanente HotM-Upgrades (Core of the Mountain / Mining Master Perk) brauchst du zusätzlich immer
-          wieder Powder. Typische Richtwerte: <strong>8m Glacite</strong> für die letzten Core-/Master-Tiers (nur relevant, wenn
-          du diese Linie pushen willst), plus ungefähr <strong>150k Mithril</strong> und <strong>1.4m Gemstone</strong> für bestimmte Core-
-          Upgrades.
+          Some permanent HotM upgrades (Core of the Mountain / Mining Master Perk) also require recurring powder investments.
+          Typical ballparks are: <strong>8m Glacite</strong> for the last Core/Master tiers (only relevant if you want to push that line),
+          plus roughly <strong>150k Mithril</strong> and <strong>1.4m Gemstone</strong> for specific Core upgrades.
         </p>
       </GuideSection>
 
-      <GuideSection title="Powder Mining (kurz & effektiv)">
+      <GuideSection title="Powder mining (short & effective)">
         <ul>
           <li>
-            <strong>Mithril Powder:</strong> Mithril abbauen + Events mitnehmen.
+            <strong>Mithril Powder:</strong> Mine mithril and do events.
           </li>
           <li>
-            <strong>Gemstone Powder:</strong> <strong>Jungle Pickaxe</strong> holen und in der <strong>Crystal Hollows Jungle</strong> Hard Stone
-            farmen. Die Chests geben Powder/Rewards; „Sludge“ verkauft sich gut.
+            <strong>Gemstone Powder:</strong> Get a <strong>Jungle Pickaxe</strong>, then farm Hard Stone in the <strong>Crystal Hollows Jungle</strong>.
+            Chests give powder/rewards; <strong>Sludge</strong> sells well.
           </li>
           <li>
-            <strong>Glacite Powder:</strong> vor allem über <strong>noch mehr Commissions</strong>.
+            <strong>Glacite Powder:</strong> Mostly from <strong>even more commissions</strong>.
           </li>
         </ul>
         <p>
-          Wichtig: Für das Chest-Gameplay lohnt es sich, <strong>Great Explorer</strong> hoch zu skillen.
+          Tip: If you’re doing chest gameplay, it’s worth leveling <strong>Great Explorer</strong>.
         </p>
         <p>
-          Powder-Gain Buffs: <strong>Powder Buff</strong> Perk + <strong>Spicy Goblin Omelette</strong> sind eine große Basis (zusammen bis
-          zu ~70% mehr Powder). Manche Drills geben ebenfalls Powder-Bonusse.
+          Powder gain buffs: the <strong>Powder Buff</strong> perk + a <strong>Spicy Goblin Omelette</strong> are a great baseline (together up to
+          ~70% more powder). Some drills also give powder bonuses.
         </p>
       </GuideSection>
 
-      <GuideSection title="Gear-Progression (Early → End Game)" description="Armor + Tool + Pet – stufenweise upgraden.">
+      <GuideSection
+        title="Gear progression (Early → End Game)"
+        description="Armor + tool + pet — upgrade in stages."
+      >
         <h3 className="text-base font-semibold">Early Game</h3>
         <ul>
           <li>
-            <strong>Armor:</strong> Glacite Armor (Drop von Glacite Walkers in den Dwarven Mines).
+            <strong>Armor:</strong> Glacite Armor (drops from Glacite Walkers in the Dwarven Mines).
           </li>
           <li>
-            <strong>Tool:</strong> Fractured Mithril Pickaxe (bei Bubu, 10k) → weiter bei Bubu upgraden bis Refined Mithril
-            Pickaxe.
+            <strong>Tool:</strong> Fractured Mithril Pickaxe (from Bubu, 10k) → keep upgrading at Bubu until Refined Mithril Pickaxe.
           </li>
           <li>
-            <strong>Pet:</strong> Mithril Golem (beliebige Rarity) oder Legendary Silverfish.
+            <strong>Pet:</strong> Mithril Golem (any rarity) or Legendary Silverfish.
           </li>
         </ul>
 
         <h3 className="mt-4 text-base font-semibold">Mid Game</h3>
         <ul>
           <li>
-            <strong>Armor:</strong> Yog Armor (Hard Stone Collection) – hat Gem Slots. Slots/Gems sind optional, helfen aber
-            beim Progress.
+            <strong>Armor:</strong> Yog Armor (Hard Stone Collection) — has gem slots. Slots/gems are optional, but help progression.
           </li>
           <li>
-            <strong>Tool:</strong> Jungle Pickaxe behalten oder in Richtung Drill gehen. Ein solider Start-Drill ist
-            <strong> Titanium Drill DR-X355</strong> (kaufen/forgen) – der Upgradetree führt später weiter.
+            <strong>Tool:</strong> Keep the Jungle Pickaxe or start moving toward a Drill. A solid starter Drill is
+            <strong> Titanium Drill DR-X355</strong> (buy/forge) — its upgrade path stays relevant later.
           </li>
           <li>
-            <strong>Pet:</strong> Legendary <strong>Bal</strong> mit <strong>Bejeweled Collar</strong>.
+            <strong>Pet:</strong> Legendary <strong>Bal</strong> with <strong>Bejeweled Collar</strong>.
           </li>
           <li>
-            <strong>Extras:</strong> Titanium Equipment Set ist hier oft ein guter Schritt.
+            <strong>Extras:</strong> Titanium Equipment is often a good step here.
           </li>
         </ul>
 
         <h3 className="mt-4 text-base font-semibold">Late Game</h3>
         <ul>
           <li>
-            <strong>Armor:</strong> <strong>Divan’s Armor</strong> (Gemstone Chambers sind teuer; nach und nach upgraden). Dazu meist
-            <strong> Jaded</strong> als Reforge.
+            <strong>Armor:</strong> <strong>Divan’s Armor</strong> (Gemstone Chambers are expensive; upgrade gradually). Usually paired with
+            <strong> Jaded</strong> as the reforge.
           </li>
           <li>
-            <strong>Tool:</strong> Upgrade Richtung <strong>Titanium Drill DR-X655</strong> (bis Divan’s Drill).
+            <strong>Tool:</strong> Upgrade toward <strong>Titanium Drill DR-X655</strong> (eventually Divan’s Drill).
           </li>
           <li>
-            <strong>Pet:</strong> Bal bleibt top in Magma Fields; <strong>Scatha</strong> ist in vielen anderen Bereichen stark;
-            <strong> Glacite Golem</strong> primär für Glacite Mineshafts.
+            <strong>Pet:</strong> Bal stays great in Magma Fields; <strong>Scatha</strong> is strong in many other areas; <strong>Glacite Golem</strong>
+            is mainly for Glacite Mineshafts.
           </li>
           <li>
-            <strong>Equipment:</strong> z.B. <strong>Dwarven Handwarmers</strong>.
+            <strong>Equipment:</strong> e.g. <strong>Dwarven Handwarmers</strong>.
           </li>
         </ul>
 
         <h3 className="mt-4 text-base font-semibold">End Game</h3>
         <p>
-          Jetzt geht’s um Feinschliff: alle Divan-Slots + <strong>Perfect Gems</strong>, <strong>Divan’s Powder Coatings</strong>,
-          <strong> Ice Cold V</strong>, und ein vollständig ausgebauter Drill (z.B. Polished Engine, Fuel Tank, Omelette usw.).
-          Reforge hängt von der Methode ab, <strong>Lustrous</strong> ist ein guter Default.
+          This is where fine-tuning starts: all Divan slots + <strong>Perfect Gems</strong>, <strong>Divan’s Powder Coatings</strong>,
+          <strong> Ice Cold V</strong>, and a fully built-out drill (e.g. Polished Engine, Fuel Tank, Omelette, etc.). The best reforge
+          depends on your method; <strong>Lustrous</strong> is a good default.
         </p>
         <p>
-          Pets: <strong>Quick Claw</strong> ist ein häufiger Endgame-Standard. Equipment: oft <strong>2× Gemstone Equipment</strong> +
+          Pets: <strong>Quick Claw</strong> is a common endgame standard. Equipment: often <strong>2× Gemstone Equipment</strong> +
           <strong> Pendant of Divan</strong>.
         </p>
       </GuideSection>
 
-      <GuideSection title="Welche Mining-Methode?" description="Du bist vorbereitet – jetzt zählt Spaß + Setup + Gebiet.">
+      <GuideSection
+        title="Which mining method should you play?"
+        description="You’re set up — now it’s about fun, setup, and the area you like."
+      >
         <p>
-          Mining hat extrem viel Content. Du kannst z.B. in den <strong>Crystal Hollows</strong> Gems farmen, in den
-          <strong> Glacite Tunnels</strong> spielen oder in den <strong>Dwarven Mines</strong> Diamonds/Mithril machen. Dieses Sheet ist
-          bewusst ein <strong>Progression-Guide</strong>: er bringt dich zu einem Setup, mit dem fast jede Methode gut läuft.
+          Mining has a ton of content. You can farm gems in the <strong>Crystal Hollows</strong>, play the <strong>Glacite Tunnels</strong>, or do
+          diamonds/mithril in the <strong>Dwarven Mines</strong>. This page is intentionally a <strong>progression guide</strong>: it gets you to a
+          setup where almost any method performs well.
         </p>
         <p>
-          Der nächste Schritt ist: pick eine Methode, die dir liegt, und optimiere dafür deinen Tree, Gear, Route und
-          Party/Server-Flow.
+          Next step: pick a method you enjoy, then optimize your tree, gear, route, and party/server flow for it.
         </p>
       </GuideSection>
 
       <ResourceLinks
         title="Useful links"
-        description="Tools + Referenzen (safe, schnell, ohne Rabbithole)."
+        description="Tools and references (safe, fast, no rabbit hole)."
         links={[
           {
             title: "SkyCrypt",
-            description: "Check Mining Stats, MP, Gear, Pets.",
+            description: "Check mining stats, MP, gear, pets.",
             href: "https://sky.shiiyu.moe/",
             tag: "Stats",
           },
           {
             title: "Hypixel Wiki: Mining",
-            description: "Übersicht zu Mining, Collections, Items.",
+            description: "Overview of mining, collections, and items.",
             href: "https://wiki.hypixel.net/Mining",
             tag: "Reference",
           },
           {
             title: "Hypixel Wiki: Heart of the Mountain",
-            description: "HotM Perks, Costs, Requirements.",
+            description: "HotM perks, costs, requirements.",
             href: "https://wiki.hypixel.net/Heart_of_the_Mountain",
             tag: "Reference",
           },
           {
             title: "Hypixel Wiki: Crystal Hollows",
-            description: "Biomes, Mobs, Mechanics, Commissions.",
+            description: "Biomes, mobs, mechanics, commissions.",
             href: "https://wiki.hypixel.net/Crystal_Hollows",
             tag: "Reference",
           },
           {
             title: "Hypixel Wiki: Dwarven Mines",
-            description: "Commissions, Events, Area mechanics.",
+            description: "Commissions, events, area mechanics.",
             href: "https://wiki.hypixel.net/Dwarven_Mines",
             tag: "Reference",
           },
@@ -222,7 +226,7 @@ export default function MiningPage() {
 
       <ResourceLinks
         title="YouTube Searches"
-        description="Einfach klicken, dann nach Aktualität sortieren (Meta ändert sich)."
+        description="Click a search and sort by upload date (the meta changes)."
         links={[
           {
             title: "HotM 10 / Commission Route",
