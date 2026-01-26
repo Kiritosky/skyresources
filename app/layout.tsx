@@ -5,6 +5,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { SiteHeader } from "../components/site-header";
+import { SiteFooter } from "../components/site-footer";
 
 const inter = Inter({
     variable: "--font-inter",
@@ -37,6 +38,7 @@ export default function RootLayout({
         <SpeedInsights />
         <Analytics />
         {children}
+        <SiteFooter />
         </body>
         </html>
     );

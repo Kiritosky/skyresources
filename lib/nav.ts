@@ -11,6 +11,7 @@ import {
   Crown,
   Wrench,
   Lightbulb,
+  Pickaxe,
 } from "lucide-react";
 
 export type NavItem = {
@@ -28,6 +29,7 @@ export const NAV_ITEMS: readonly NavItem[] = [
   { href: "/mods", label: "Mods", icon: Wrench, accentClass: "accent-shards" },
   { href: "/garden", label: "Garden", icon: Sprout, accentClass: "accent-garden" },
   { href: "/money", label: "Money", icon: Coins, accentClass: "accent-money" },
+  { href: "/mining", label: "Mining", icon: Pickaxe, accentClass: "accent-money" },
   { href: "/dungeons", label: "Dungeons", icon: Swords, accentClass: "accent-dungeons" },
   { href: "/mayor", label: "Mayors & Events", icon: Landmark, accentClass: "accent-mayor" },
   { href: "/news", label: "News", icon: Newspaper, accentClass: "accent-news" },
