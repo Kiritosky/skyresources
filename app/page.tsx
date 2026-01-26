@@ -32,6 +32,7 @@ const homeDescriptions: Record<string, string> = {
   "/mayor": "What’s happening, what to prep, where to track it.",
   "/news": "Patch notes, what changed, who it affects.",
   "/shards": "Best locations, drops, and tracking tools.",
+  "/mining": "Best ores, locations, and gear for mining efficiently.",
 };
 
 export default function Page() {
