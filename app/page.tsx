@@ -70,13 +70,6 @@ export default function Page() {
                 </Link>
               ))}
             </nav>
-
-            <div className="mt-4 rounded-lg bg-muted/30 p-3 text-xs text-muted-foreground">
-              <p className="font-semibold text-foreground/90">Search (soon)</p>
-              <p className="mt-1">
-                Next step: a search bar for “Garden FF”, “Shards”, “Kuudra”, etc.
-              </p>
-            </div>
           </div>
         </aside>
 
