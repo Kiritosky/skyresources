@@ -127,6 +127,10 @@ export function SiteFooter() {
             <span className="opacity-60">&bull;</span>
             <span>Not affiliated with Hypixel or Mojang.</span>
           </div>
+          <a href="https://github.com/Kiritosky/skyresources" className="text-muted-foreground hover:text-foreground" target="_blank"
+             rel="noreferrer">
+            Github
+          </a>
           <Link href="/" className="text-muted-foreground hover:text-foreground">
             Home
           </Link>
