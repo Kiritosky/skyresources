@@ -3,43 +3,67 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
-export type Tab = {
-  id: string;
+/**
+ * Tabbed content sections. Use in MDX like:
+ *
+ * <Tabs>
+ * <Tab label="Early Game">
+ * Content for early game here — full markdown supported.
+ * </Tab>
+ * <Tab label="Mid Game">
+ * Content for mid game here.
+ * </Tab>
+ * <Tab label="Late Game">
+ * Content for late game here.
+ * </Tab>
+ * </Tabs>
+ *
+ * Any markdown (tables, callouts, lists) works inside a <Tab>.
+ */
+
+interface TabItem {
   label: string;
-  content: React.ReactNode;
-};
+  children: React.ReactNode;
+}
 
-export function TabGroup({
-  tabs,
-  defaultTab,
-}: {
-  tabs: Tab[];
-  defaultTab?: string;
-}) {
-  const [active, setActive] = useState(defaultTab ?? tabs[0]?.id ?? "");
+// Tab is used as a data container — Tabs reads its props via React.Children
+export function Tab({ children }: { label: string; children: React.ReactNode }) {
+  return <>{children}</>;
+}
 
-  const current = tabs.find((t) => t.id === active) ?? tabs[0];
+export function Tabs({ children }: { children: React.ReactNode }) {
+  const [active, setActive] = useState(0);
+
+  // Collect Tab children
+  const tabs = (
+    Array.isArray(children) ? children : [children]
+  ).filter(Boolean) as React.ReactElement<TabItem>[];
+
+  if (tabs.length === 0) return null;
 
   return (
-    <div>
-      <div className="mb-4 flex gap-1 overflow-x-auto rounded-xl border bg-muted/20 p-1">
-        {tabs.map((tab) => (
+    <div className="my-4 rounded-xl border border-border overflow-hidden">
+      {/* Tab bar */}
+      <div className="flex overflow-x-auto border-b border-border bg-muted/30">
+        {tabs.map((tab, i) => (
           <button
-            key={tab.id}
-            onClick={() => setActive(tab.id)}
+            key={i}
+            onClick={() => setActive(i)}
             className={cn(
-              "whitespace-nowrap rounded-lg px-4 py-2 text-sm font-medium transition-colors",
-              tab.id === active
-                ? "bg-hypixel-gold/15 text-hypixel-gold"
-                : "text-muted-foreground hover:text-foreground hover:bg-muted/30",
+              "shrink-0 px-4 py-2.5 text-sm font-medium transition-colors whitespace-nowrap",
+              active === i
+                ? "text-primary border-b-2 border-primary bg-background -mb-px"
+                : "text-muted-foreground hover:text-foreground"
             )}
           >
-            {tab.label}
+            {tab.props.label}
           </button>
         ))}
       </div>
-      <div className="animate-fade-in-up" key={current?.id}>
-        {current?.content}
+
+      {/* Active panel */}
+      <div className="p-4">
+        {tabs[active]?.props.children}
       </div>
     </div>
   );

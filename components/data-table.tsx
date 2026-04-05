@@ -1,93 +1,38 @@
-import { cn } from "@/lib/utils";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "./ui/card";
-
-export type Column = {
-  key: string;
-  label: string;
-  align?: "left" | "center" | "right";
-};
-
-export function DataTable({
+/**
+ * A titled card wrapper for markdown tables. Use in MDX like:
+ *
+ * <TableCard title="Money methods comparison" description="Approximate at mid-game gear">
+ * | Method | Coins/hr | Setup Cost |
+ * |--------|---------|-----------|
+ * | Garden | 8M      | 5M        |
+ * | Mining | 6M      | 15M       |
+ * </TableCard>
+ *
+ * The GFM markdown table inside is rendered with the standard styled table.
+ * TableCard just wraps it with a title and optional description above.
+ *
+ * If you don't need a title, just write a plain markdown table — it gets
+ * the same styling automatically without this component.
+ */
+export function TableCard({
   title,
   description,
-  columns,
-  rows,
-  caption,
+  children,
 }: {
-  title?: string;
+  title: string;
   description?: string;
-  columns: Column[];
-  rows: Record<string, React.ReactNode>[];
-  caption?: string;
+  children: React.ReactNode;
 }) {
   return (
-    <Card>
-      {title ? (
-        <CardHeader>
-          <CardTitle>{title}</CardTitle>
-          {description ? (
-            <CardDescription>{description}</CardDescription>
-          ) : null}
-        </CardHeader>
-      ) : null}
-      <CardContent className={title ? undefined : "p-0"}>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            {caption ? (
-              <caption className="mb-2 text-xs text-muted-foreground">
-                {caption}
-              </caption>
-            ) : null}
-            <thead>
-              <tr className="border-b border-border/50 bg-muted/20">
-                {columns.map((col) => (
-                  <th
-                    key={col.key}
-                    className={cn(
-                      "whitespace-nowrap px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-muted-foreground",
-                      col.align === "center" && "text-center",
-                      col.align === "right" && "text-right",
-                      !col.align && "text-left",
-                    )}
-                  >
-                    {col.label}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((row, i) => (
-                <tr
-                  key={i}
-                  className={cn(
-                    "border-b border-border/30 transition-colors hover:bg-muted/10",
-                    i % 2 === 1 && "bg-muted/5",
-                  )}
-                >
-                  {columns.map((col) => (
-                    <td
-                      key={col.key}
-                      className={cn(
-                        "whitespace-nowrap px-4 py-2.5",
-                        col.align === "center" && "text-center",
-                        col.align === "right" && "text-right",
-                      )}
-                    >
-                      {row[col.key] ?? "—"}
-                    </td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </CardContent>
-    </Card>
+    <div className="my-6">
+      <div className="mb-2">
+        <p className="text-sm font-semibold text-foreground">{title}</p>
+        {description && (
+          <p className="text-xs text-muted-foreground mt-0.5">{description}</p>
+        )}
+      </div>
+      {/* Neutralise the top margin the table element adds when inside a card */}
+      <div className="[&>div]:mt-0">{children}</div>
+    </div>
   );
 }

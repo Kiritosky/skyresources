@@ -1,0 +1,387 @@
+---
+title: Page Title Here
+description: One clear sentence describing what this page covers and who it helps.
+lastUpdated: "2026-01-01"
+tags: [tag1, tag2, tag3]
+---
+
+{/*
+  ╔══════════════════════════════════════════════════════════════╗
+  ║              SKYRESOURCES — CONTRIBUTOR TEMPLATE             ║
+  ╠══════════════════════════════════════════════════════════════╣
+  ║                                                              ║
+  ║  HOW TO USE THIS FILE                                        ║
+  ║  1. Copy this file to  content/pages/<your-slug>.mdx         ║
+  ║  2. Edit the frontmatter at the top (title, description…)    ║
+  ║  3. Replace all content below with your actual page          ║
+  ║  4. Delete this comment block when done                      ║
+  ║                                                              ║
+  ║  The filename becomes the URL:                               ║
+  ║    content/pages/skills.mdx  →  skyresources.com/skills      ║
+  ║    content/pages/my-guide.mdx → skyresources.com/my-guide    ║
+  ║                                                              ║
+  ║  Full docs: CONTRIBUTING.md                                  ║
+  ╚══════════════════════════════════════════════════════════════╝
+*/}
+
+{/* ───────────────────────────────────────────────────────────────
+    SECTION: Introduction
+    Every page should start with a short overview paragraph.
+    What does this page cover? Who is it for? What will they learn?
+─────────────────────────────────────────────────────────────── */}
+
+## Overview
+
+Write your introduction here. Keep it short — 2–4 sentences. Tell the reader what this page covers and what they'll be able to do after reading it.
+
+You can use **bold** for key terms, *italic* for emphasis, ~~strikethrough~~ for deprecated info, and `inline code` for item names, commands, or values like `/warp hub`.
+
+---
+
+{/* ───────────────────────────────────────────────────────────────
+    SECTION: Callout Boxes
+    Use these sparingly — max 2–3 per page. Each serves a purpose:
+    • <Tip>     → Helpful hints, pro strategies, time-savers
+    • <Info>    → Extra context, good-to-know facts, neutral info
+    • <Warning> → Things to be careful about, common mistakes
+    • <Danger>  → Serious mistakes that can waste millions of coins
+─────────────────────────────────────────────────────────────── */}
+
+## Callout Boxes
+
+The `title` prop is optional on all callouts — the icon still shows without it.
+
+<Tip title="Pro Tip">
+Use `<Tip>` for strategies, shortcuts, and "did you know" moments. Green border, lightbulb icon.
+</Tip>
+
+<Info title="Good to Know">
+Use `<Info>` for neutral context that adds value but isn't a warning. Blue border, info icon.
+</Info>
+
+<Warning title="Watch Out">
+Use `<Warning>` for things players commonly get wrong or should approach carefully. Gold border, warning icon.
+</Warning>
+
+<Danger title="Don't Do This">
+Use `<Danger>` for mistakes that cost a lot of coins or progression. Red border, alert icon. Reserve for genuinely serious stuff.
+</Danger>
+
+---
+
+{/* ───────────────────────────────────────────────────────────────
+    SECTION: Tables
+    Just write markdown tables — they get styled automatically.
+    Use tables for: gear comparisons, stat lists, method rankings,
+    drop rates, requirements, anything with rows and columns.
+─────────────────────────────────────────────────────────────── */}
+
+## Tables
+
+Write standard markdown tables — styling is applied automatically.
+
+| Column A | Column B | Column C |
+|----------|----------|----------|
+| Row 1    | Value    | Notes    |
+| Row 2    | Value    | Notes    |
+| Row 3    | Value    | Notes    |
+
+### Column Alignment
+
+Control alignment with colons in the separator row:
+
+| Left aligned | Centered | Right aligned |
+|:-------------|:--------:|--------------:|
+| text         | text     | 100           |
+| text         | text     | 2,500         |
+| text         | text     | 10,000,000    |
+
+### Table Tips
+- Keep column headers short (they're bold and uppercase automatically)
+- Use `—` for empty cells rather than leaving them blank
+- Sort rows logically (ascending by level/cost, or most important first)
+- Numbers: use commas — write `1,000,000` not `1000000`
+
+---
+
+{/* ───────────────────────────────────────────────────────────────
+    SECTION: Lists
+    Unordered lists for features, options, tips.
+    Ordered lists for steps that must be done in sequence.
+─────────────────────────────────────────────────────────────── */}
+
+## Lists
+
+### Unordered (bullet points)
+Use for features, options, or things with no specific order:
+- First item
+- Second item
+- Third item with a sub-list:
+  - Nested item (indent 2 spaces)
+  - Another nested item
+- Back to top level
+
+### Ordered (numbered steps)
+Use when sequence matters — tutorial steps, upgrade paths:
+1. First do this
+2. Then do this
+3. Finally do this
+
+---
+
+{/* ───────────────────────────────────────────────────────────────
+    SECTION: Headings
+    Use h2 (##) for main sections.
+    Use h3 (###) for subsections within a section.
+    Use h4 (####) for minor labels (renders small uppercase).
+    Never use h1 (#) — the page title already uses it.
+─────────────────────────────────────────────────────────────── */}
+
+## Section Heading (h2)
+
+Use `##` for main page sections. These divide the page into major topics.
+
+### Subsection (h3)
+
+Use `###` for a topic within a section. Good for breaking up long sections.
+
+#### Minor label (h4)
+
+Use `####` sparingly — it renders as small uppercase text, good for labels like "Early Game" or "Budget Option".
+
+---
+
+{/* ───────────────────────────────────────────────────────────────
+    SECTION: Links
+    Internal links use /path format (no domain needed).
+    External links include the full URL — they open in a new tab.
+─────────────────────────────────────────────────────────────── */}
+
+## Links
+
+```
+[Internal link](/skills)                       ← navigates within the site
+[External link](https://wiki.hypixel.net/)     ← opens in new tab automatically
+[Link with context text](https://sky.coflnet.com/) ← descriptive text is better than "click here"
+```
+
+---
+
+{/* ───────────────────────────────────────────────────────────────
+    SECTION: Text formatting
+─────────────────────────────────────────────────────────────── */}
+
+## Text Formatting
+
+| Syntax | Result | When to Use |
+|--------|--------|-------------|
+| `**text**` | **text** | Key terms, item names, important values |
+| `*text*` | *text* | Mild emphasis, flavor |
+| `~~text~~` | ~~text~~ | Deprecated items, outdated info |
+| `` `text` `` | `text` | Commands, item IDs, exact values |
+
+---
+
+{/* ───────────────────────────────────────────────────────────────
+    SECTION: Code Blocks
+    Use for commands, keybinds, config snippets.
+─────────────────────────────────────────────────────────────── */}
+
+## Code Blocks
+
+Inline: use `` `backticks` `` for commands like `/warp hub` or item names like `Hyperion`.
+
+Block (three backticks, then three to close):
+
+```
+/warp hub
+/sethome
+/home
+```
+
+---
+
+{/* ───────────────────────────────────────────────────────────────
+    SECTION: Blockquotes
+    Use for quotes, supplemental info that doesn't need a full callout.
+─────────────────────────────────────────────────────────────── */}
+
+## Blockquotes
+
+> Use a blockquote (`>`) for a supplemental note that doesn't quite need a full `<Info>` callout. Good for a single sentence of context, a quote, or a tip that's lower priority.
+
+---
+
+{/* ───────────────────────────────────────────────────────────────
+    SECTION: Details (collapsible)
+    Use for FAQs or optional context readers can skip.
+    Stack multiple <Details> in a row for a clean FAQ section.
+─────────────────────────────────────────────────────────────── */}
+
+## Collapsible Sections
+
+<Details title="Do I need to do this before starting dungeons?">
+No, but it helps significantly. You can start dungeons at any time — just make sure
+your gear and skill level match the floor requirements.
+</Details>
+
+<Details title="What's the fastest way to level this skill?" defaultOpen>
+The `defaultOpen` prop makes the section start expanded. Remove it to start collapsed
+(the default). Use `defaultOpen` for the most important FAQ answer on a page.
+</Details>
+
+---
+
+{/* ───────────────────────────────────────────────────────────────
+    SECTION: Checklist
+    Use for setup checklists, milestone lists, "before you start" sections.
+    Children must be a standard markdown unordered list (- item).
+─────────────────────────────────────────────────────────────── */}
+
+## Checklist
+
+<Checklist title="Before you start this method">
+- Unlock the relevant area
+- Have at least 300 Magic Power
+- Equip the correct pet at Level 100
+- Check Bazaar prices before committing
+</Checklist>
+
+---
+
+{/* ───────────────────────────────────────────────────────────────
+    SECTION: TableCard
+    Adds a title and description above a markdown table.
+    If you don't need a title, just write a plain markdown table.
+─────────────────────────────────────────────────────────────── */}
+
+## Titled Table
+
+<TableCard title="Methods comparison" description="Approximate at mid-game gear — your results will vary">
+| Method | Coins/hr | Setup Cost | Notes |
+|--------|---------|-----------|-------|
+| Example A | 8M | 5M | Easy start |
+| Example B | 12M | 20M | Higher setup |
+| Example C | 20M | 80M | Endgame only |
+</TableCard>
+
+---
+
+{/* ───────────────────────────────────────────────────────────────
+    SECTION: Steps (progression timeline)
+    Two ways to use it:
+    1. Simple string array  — steps={["Step 1", "Step 2"]}
+    2. Object array with status markers (done / current / upcoming)
+─────────────────────────────────────────────────────────────── */}
+
+## Progression Steps
+
+Simple version — just strings:
+
+<Steps title="Recommended order" steps={[
+  "Do this first",
+  "Then do this",
+  "Then this",
+  "Finally this",
+]} />
+
+With status markers — shows progress visually:
+
+<Steps title="Your roadmap" steps={[
+  { label: "Step you already finished", status: "done" },
+  { label: "What you should do right now", description: "This is the most important step", status: "current" },
+  { label: "Next step after that", status: "upcoming" },
+  { label: "Long-term goal", description: "Don't worry about this yet", status: "upcoming" },
+]} />
+
+---
+
+{/* ───────────────────────────────────────────────────────────────
+    SECTION: Stat / StatRow
+    Use for key numbers — coins/hr, setup cost, requirements.
+    Single stat: <Stat label="..." value="..." />
+    Multiple stats: wrap in <StatRow>
+─────────────────────────────────────────────────────────────── */}
+
+## Stat Cards
+
+Single stat:
+
+<Stat label="Coins/hr" value="15M" trend="up" note="With budget setup" />
+
+Multiple stats side by side:
+
+<StatRow>
+  <Stat label="Coins/hr" value="15M" trend="up" />
+  <Stat label="Setup Cost" value="50M" />
+  <Stat label="Skill Req." value="30+" />
+  <Stat label="HotM Req." value="7+" note="Minimum" />
+</StatRow>
+
+`trend` accepts `"up"` (green), `"down"` (red), or `"neutral"` (dash). Leave it out if not relevant.
+
+---
+
+{/* ───────────────────────────────────────────────────────────────
+    SECTION: Tabs
+    Use for stage-specific content (Early / Mid / Late)
+    or build-specific content (Mage / Archer / Berserk).
+    Full markdown works inside each tab — including tables and callouts.
+─────────────────────────────────────────────────────────────── */}
+
+## Tabbed Content
+
+<Tabs>
+  <Tab label="Early Game">
+  Content for the early game version of this topic.
+
+  | Gear | Source | Cost |
+  |------|--------|------|
+  | Example | Crafted | ~50k |
+
+  <Tip title="Start here">
+  Keep it simple early — don't over-invest.
+  </Tip>
+  </Tab>
+
+  <Tab label="Mid Game">
+  Content for mid game. You can use any markdown here including **bold**, tables,
+  and callouts — everything works inside a tab.
+  </Tab>
+
+  <Tab label="Late Game">
+  Late game content. Keep each tab focused on what's actually different at that stage.
+  If everything is the same, don't use tabs — use a single section instead.
+  </Tab>
+</Tabs>
+
+---
+
+{/* ───────────────────────────────────────────────────────────────
+    SECTION: Horizontal Rule
+    Use --- on its own line to create a visual divider between sections.
+    Good for separating major topic areas on long pages.
+─────────────────────────────────────────────────────────────── */}
+
+## Dividers
+
+Use `---` on its own line between major sections to add a visual horizontal rule:
+
+---
+
+This divider above is created by `---` on a blank line.
+
+---
+
+{/* ───────────────────────────────────────────────────────────────
+    USEFUL LINKS SECTION
+    End every page with a "Useful Links" section.
+    Keep it relevant — 3–6 links max.
+─────────────────────────────────────────────────────────────── */}
+
+## Useful Links
+
+- [Hypixel Wiki](https://wiki.hypixel.net/) — official item and mechanic reference.
+- [SkyCrypt](https://sky.shiiyu.moe/) — view any player's full profile and stats.
+- [COFL Bazaar](https://sky.coflnet.com/) — live prices and flip finder.
+- [Fandom Wiki](https://hypixel-skyblock.fandom.com/) — community wiki, often more detailed.
