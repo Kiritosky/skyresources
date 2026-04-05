@@ -19,7 +19,19 @@
   --color-dungeons: #a78bfa;
   --color-mayor: #60a5fa;
   --color-news: #f472b6;
-    --color-shards: #38bdf8;
+  --color-shards: #38bdf8;
+
+  /* new page accents */
+  --color-pets: #fb923c;
+  --color-slayers: #f87171;
+  --color-skills: #2dd4bf;
+  --color-accessories: #c084fc;
+  --color-kuudra: #ef4444;
+  --color-fishing: #7dd3fc;
+  --color-crimson: #dc2626;
+  --color-rift: #818cf8;
+  --color-collections: #a3e635;
+  --color-enchanting: #22d3ee;
 
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -128,33 +140,113 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-/* Small utilities used by the landing page */
+/* ───────────────────────────────────────────────
+   Keyframe Animations
+   ─────────────────────────────────────────────── */
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* ───────────────────────────────────────────────
+   Utilities
+   ─────────────────────────────────────────────── */
+
 @layer utilities {
   .font-heading {
     font-family: var(--font-heading), var(--font-sans), system-ui, sans-serif;
   }
 
-  .accent-gold {
-    color: var(--color-hypixel-gold);
+  /* Accent colors — existing */
+  .accent-gold { color: var(--color-hypixel-gold); }
+  .accent-garden { color: var(--color-garden); }
+  .accent-money { color: var(--color-money); }
+  .accent-dungeons { color: var(--color-dungeons); }
+  .accent-mayor { color: var(--color-mayor); }
+  .accent-news { color: var(--color-news); }
+  .accent-shards { color: var(--color-shards); }
+
+  /* Accent colors — new pages */
+  .accent-pets { color: var(--color-pets); }
+  .accent-slayers { color: var(--color-slayers); }
+  .accent-skills { color: var(--color-skills); }
+  .accent-accessories { color: var(--color-accessories); }
+  .accent-kuudra { color: var(--color-kuudra); }
+  .accent-fishing { color: var(--color-fishing); }
+  .accent-crimson { color: var(--color-crimson); }
+  .accent-rift { color: var(--color-rift); }
+  .accent-collections { color: var(--color-collections); }
+  .accent-enchanting { color: var(--color-enchanting); }
+
+  /* Staggered entrance animation */
+  .animate-fade-in-up {
+    animation: fade-in-up 0.5s ease-out both;
+    animation-delay: var(--delay, 0s);
   }
-  .accent-garden {
-    color: var(--color-garden);
+
+  /* Animated gradient background for hero */
+  .bg-gradient-animated {
+    background: linear-gradient(135deg, var(--color-hypixel-gold), var(--color-hypixel-purple), var(--color-dungeons), var(--color-hypixel-gold));
+    background-size: 300% 300%;
+    animation: gradient-shift 8s ease infinite;
   }
-  .accent-money {
-    color: var(--color-money);
+
+  /* Gradient text */
+  .gradient-text {
+    background: linear-gradient(135deg, var(--color-hypixel-gold) 0%, var(--color-hypixel-purple) 50%, var(--color-dungeons) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
-  .accent-dungeons {
-    color: var(--color-dungeons);
+
+  /* Subtle grid background pattern */
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, oklch(1 0 0 / 4%) 1px, transparent 1px),
+      linear-gradient(to bottom, oklch(1 0 0 / 4%) 1px, transparent 1px);
+    background-size: 48px 48px;
   }
-  .accent-mayor {
-    color: var(--color-mayor);
-  }
-  .accent-news {
-    color: var(--color-news);
-  }
-    .accent-shards {
-        color: var(--color-shards);
-    }
+
+  /* Glow borders per accent */
+  .glow-gold:hover { box-shadow: 0 0 24px -4px var(--color-hypixel-gold); }
+  .glow-garden:hover { box-shadow: 0 0 24px -4px var(--color-garden); }
+  .glow-money:hover { box-shadow: 0 0 24px -4px var(--color-money); }
+  .glow-dungeons:hover { box-shadow: 0 0 24px -4px var(--color-dungeons); }
+  .glow-mayor:hover { box-shadow: 0 0 24px -4px var(--color-mayor); }
+  .glow-news:hover { box-shadow: 0 0 24px -4px var(--color-news); }
+  .glow-shards:hover { box-shadow: 0 0 24px -4px var(--color-shards); }
+  .glow-pets:hover { box-shadow: 0 0 24px -4px var(--color-pets); }
+  .glow-slayers:hover { box-shadow: 0 0 24px -4px var(--color-slayers); }
+  .glow-skills:hover { box-shadow: 0 0 24px -4px var(--color-skills); }
+  .glow-accessories:hover { box-shadow: 0 0 24px -4px var(--color-accessories); }
+  .glow-kuudra:hover { box-shadow: 0 0 24px -4px var(--color-kuudra); }
+  .glow-fishing:hover { box-shadow: 0 0 24px -4px var(--color-fishing); }
+  .glow-crimson:hover { box-shadow: 0 0 24px -4px var(--color-crimson); }
+  .glow-rift:hover { box-shadow: 0 0 24px -4px var(--color-rift); }
+  .glow-collections:hover { box-shadow: 0 0 24px -4px var(--color-collections); }
+  .glow-enchanting:hover { box-shadow: 0 0 24px -4px var(--color-enchanting); }
 }
 
 /* Default to dark like a SkyBlock hub */

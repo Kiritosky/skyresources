@@ -2,181 +2,122 @@ import Link from "next/link";
 import { DocsLayout } from "../../components/docs-layout";
 import { GuideSection } from "../../components/guide-section";
 import { ResourceLinks } from "../../components/resource-links";
+import { DataTable } from "../../components/data-table";
+import { TipCallout } from "../../components/tip-callout";
+import { AccordionSection } from "../../components/accordion-section";
 
 export default function ModsPage() {
   return (
     <DocsLayout
       title="Mods"
-      description="A curated list of the most important SkyBlock mods and where to get them. This page focuses on safe, common, and practical QoL."
+      description="A curated list of the most important SkyBlock mods (including SkyHanni), safe sources, and setup tips."
     >
-      <GuideSection
-        title="Quick overview (safe modding rules)"
-        description="A good setup is small, stable, and predictable."
-      >
+      <GuideSection title="Safe modding rules" description="A good setup is small, stable, and predictable.">
         <ul>
-          <li>
-            Prefer trusted sources (official websites / GitHub). Avoid random re-uploads.
-          </li>
-          <li>
-            Keep your mod folder small. Too many overlapping mods causes bugs and FPS drops.
-          </li>
-          <li>
-            Install in layers: baseline - one mod - re-test - then the next.
-          </li>
-          <li>
-            After SkyBlock updates: treat it like a mini-patch cycle. If your client breaks, disable the last updated mod and
-            re-test.
-          </li>
-          <li>
-            If you care about efficiency: use mods to reduce downtime (routing, overlays, quick actions), not to replace game
-            knowledge. For practical habits, see <Link href="/tricks">Tricks</Link>.
-          </li>
+          <li>Prefer trusted sources (official websites / GitHub / Modrinth). Avoid random re-uploads.</li>
+          <li>Keep your mod folder small. Too many overlapping mods causes bugs and FPS drops.</li>
+          <li>Install in layers: baseline — one mod — re-test — then the next.</li>
+          <li>Decide on <strong>one ecosystem</strong> (Forge or Fabric) and stick to it.</li>
+          <li>After SkyBlock updates: update mods one by one. If something breaks, roll back the last change.</li>
         </ul>
       </GuideSection>
 
-      <GuideSection
-        title="Recommended baseline stack (start here)"
-        description="A small setup that covers most QoL without turning your client into a science project."
-      >
-        <p>
-          If you&apos;re new, your target is a stable client + a few workflows. You can always add more later.
-        </p>
-        <ul>
-          <li>
-            <strong>Core QoL:</strong> SBA + NEU (item info, warnings, basic utilities)
-          </li>
-          <li>
-            <strong>Dungeons (optional):</strong> Skytils (only enable what you actually use). If you&apos;re focusing dungeons,
-            also check <Link href="/dungeons">Dungeons</Link>.
-          </li>
-          <li>
-            <strong>Performance:</strong> Sodium (Fabric) when you need FPS headroom (especially on orange/red FPS areas).
-          </li>
-          <li>
-            If you&apos;re new: don&apos;t add 10+ mods at once. Add one mod, configure it, then move on.
-          </li>
-        </ul>
-        <p>
-          Tip: Mods don&apos;t fix a bad progression path. If you&apos;re unsure what to buy/grind next, use <Link href="/money">Money</Link>
-          as the comparison hub and commit to one lane for a week.
-        </p>
-      </GuideSection>
+      <DataTable
+        title="Recommended mods"
+        description="Core mods for SkyBlock in 2025-2026. Most players use SkyHanni + Skyblocker as their base."
+        columns={[
+          { key: "mod", label: "Mod" },
+          { key: "type", label: "Type" },
+          { key: "loader", label: "Loader" },
+          { key: "features", label: "Key Features" },
+          { key: "priority", label: "Priority" },
+        ]}
+        rows={[
+          { mod: "SkyHanni", type: "QoL", loader: "Forge/Fabric", features: "Garden overlays, slayer trackers, fishing tools, mining helpers, visitor profit calc", priority: "Essential" },
+          { mod: "Skyblocker", type: "QoL", loader: "Fabric", features: "Core QoL, item tooltips, dungeon helpers, price overlays", priority: "Essential" },
+          { mod: "Firmament", type: "QoL", loader: "Fabric", features: "NEU successor — storage overlay, item list, search bar", priority: "High" },
+          { mod: "Odin", type: "Dungeons", loader: "Forge", features: "Dungeon-specific solvers and utilities", priority: "High (dungeons)" },
+          { mod: "SBO", type: "Diana", loader: "Forge", features: "Diana/mythological event helpers", priority: "Niche (Diana)" },
+          { mod: "Skytils", type: "QoL", loader: "Forge", features: "Dungeon solvers, utilities (1.8.9)", priority: "Medium (legacy)" },
+          { mod: "NEU", type: "QoL", loader: "Forge", features: "Item info overlays (1.8.9 legacy)", priority: "Medium (legacy)" },
+          { mod: "SBA", type: "QoL", loader: "Forge", features: "QoL features and safety warnings (1.8.9)", priority: "Medium (legacy)" },
+          { mod: "ScamScreener", type: "Security", loader: "Fabric", features: "Flags phishing links, scam patterns in chat", priority: "Recommended" },
+          { mod: "Sodium", type: "Performance", loader: "Fabric", features: "Major FPS boost, render optimization", priority: "Essential" },
+        ]}
+        caption="For MC 1.21+, SkyHanni + Skyblocker + Sodium is the recommended baseline."
+      />
 
-      <GuideSection
-        title="Install & update workflow (no pain)"
-        description="A simple process that avoids most crashes (and saves hours of debugging)."
-      >
+      <TipCallout type="tip" title="SkyHanni is the #1 mod now">
+        <p>
+          <strong>SkyHanni</strong> has become the most popular SkyBlock mod. It covers Garden (crop money/hr, visitor helper, pest tracker), Slayers (HP indicators, timers), Fishing (trophy display, sea creature alerts), Mining, and much more. Available at <a href="https://sky-hanni.com/" target="_blank" rel="noreferrer">sky-hanni.com</a> and Modrinth.
+        </p>
+      </TipCallout>
+
+      <GuideSection title="Recommended baseline stack (1.21+)" description="Start here. Add more later.">
         <ol>
-          <li>
-            Decide on one ecosystem (Forge or Fabric) and stick to it for now. Mixing random loaders usually ends in pain.
-          </li>
-          <li>
-            Install your baseline stack. Launch once. If it works, add the next mod.
-          </li>
-          <li>
-            Keep backups: before you update, copy your mod folder so you can roll back quickly.
-          </li>
-          <li>
-            When SkyBlock updates: update mods one by one. If something breaks, roll back the last change.
-          </li>
-          <li>
-            When a new patch changes mechanics, you usually want to update your &quot;knowledge&quot; too. Use <Link href="/news">News &amp; patches</Link>
-            to triage what matters.
-          </li>
+          <li><strong>Performance first</strong>: install Sodium. Performance on 1.21+ can feel better than 1.8.9 with the right mods.</li>
+          <li><strong>Core QoL</strong>: SkyHanni + Skyblocker (or Firmament). These cover 90% of what you need.</li>
+          <li><strong>Dungeons</strong>: add Odin if you play dungeons seriously.</li>
+          <li><strong>Security</strong>: ScamScreener to catch phishing and scam messages.</li>
         </ol>
       </GuideSection>
 
-      <GuideSection
-        title="Settings that prevent headaches"
-        description="Most &quot;mod issues&quot; are actually &quot;settings overlap&quot;."
-      >
+      <GuideSection title="Settings that prevent headaches" description="Most mod issues are actually settings overlap.">
         <ul>
-          <li>
-            Don&apos;t enable overlapping features in multiple mods (e.g. the same overlay in SBA + NEU + Skytils).
-          </li>
-          <li>
-            If you&apos;re lagging: disable expensive render features and reduce particle-heavy settings.
-          </li>
-          <li>
-            Keep chat and GUI clean: only enable notifications you&apos;ll act on.
-          </li>
-          <li>
-            Don&apos;t let the UI become noise: if you start ignoring warnings/overlays, remove them.
-          </li>
-          <li>
-            If your goal is profit/hour, prioritize settings that support your method (clear timers, route markers, item value
-            overlays). Method selection lives on <Link href="/money">Money</Link>; Mining-specific setups are on <Link href="/mining">Mining</Link>.
-          </li>
+          <li>Don&apos;t enable the same feature in multiple mods (same overlay in SkyHanni + Skyblocker).</li>
+          <li>If lagging: disable expensive render features and reduce particles.</li>
+          <li>Only enable notifications you&apos;ll act on. Noise = ignored warnings.</li>
+          <li>If your goal is profit/hr, prioritize settings that support your method (timers, route markers, value overlays).</li>
         </ul>
       </GuideSection>
 
-      <GuideSection title="Future: your modpack">
-        <p>
-          When you want to link your own modpack, we&apos;ll add a dedicated page with download links
-          (Modrinth/CurseForge/GitHub releases), install steps, and compatibility notes.
-        </p>
-      </GuideSection>
-
-      <ResourceLinks
-        title="Core QoL mods"
-        description="Commonly used mods that improve UI, usability, and general SkyBlock comfort."
-        links={[
-          {
-            title: "SkyBlockAddons (SBA)",
-            description: "QoL features and safety warnings.",
-            href: "https://biscuit.codes/mods/skyblockaddons/",
-            tag: "Mod",
-          },
-          {
-            title: "NotEnoughUpdates (NEU)",
-            description: "Item info overlays and utilities (depends on setup/version).",
-            href: "https://github.com/NotEnoughUpdates/NotEnoughUpdates",
-            tag: "Mod",
-          },
-          {
-            title: "Skytils",
-            description: "Dungeon QoL, solvers, utilities (check rules and settings).",
-            href: "https://github.com/Skytils/SkytilsMod",
-            tag: "Mod",
-          },
+      <AccordionSection
+        title="Frequently asked questions"
+        items={[
+          { question: "Should I use 1.8.9 or 1.21+?", answer: <p>1.21+ is now recommended for most players. With Sodium + modern mods, performance is equal or better. 1.8.9 mods (SBA, NEU, Skytils) are legacy but still work.</p> },
+          { question: "Are these mods allowed?", answer: <p>QoL mods like SkyHanni and Skyblocker are generally accepted. They don&apos;t automate gameplay. Always check the latest Hypixel rules for current allowed mods. Avoid anything that automates actions.</p> },
+          { question: "My client crashes after adding a mod?", answer: <p>Remove the last mod you added. Check version compatibility. Don&apos;t mix Forge and Fabric mods. Start with a fresh install if needed.</p> },
+          { question: "What about Optifine?", answer: <p>Sodium is preferred for 1.21+. Optifine still works on 1.8.9 Forge setups but isn&apos;t compatible with Fabric mods.</p> },
         ]}
       />
 
       <ResourceLinks
-        title="Performance"
-        description="If your FPS is bad, start here before adding more features."
+        title="Download links"
+        description="Official and safe sources only."
         links={[
-          {
-            title: "Sodium (Fabric)",
-            description: "Big FPS boost on Fabric.",
-            href: "https://modrinth.com/mod/sodium",
-            tag: "Mod",
-          },
-          {
-            title: "OptiFine (Legacy)",
-            description: "Common on older setups; compatibility varies.",
-            href: "https://optifine.net/downloads",
-            tag: "Mod",
-          },
+          { title: "SkyHanni", description: "Most popular SkyBlock mod. Fabric/Forge.", href: "https://modrinth.com/mod/skyhanni", tag: "Mod" },
+          { title: "SkyHanni (Official Site)", description: "Download, docs, and changelog.", href: "https://sky-hanni.com/", tag: "Mod" },
+          { title: "Skyblocker", description: "Core Fabric QoL mod.", href: "https://modrinth.com/mod/skyblocker-liap", tag: "Mod" },
+          { title: "Firmament", description: "NEU successor for Fabric.", href: "https://modrinth.com/mod/firmament", tag: "Mod" },
+          { title: "Sodium", description: "FPS boost for Fabric.", href: "https://modrinth.com/mod/sodium", tag: "Performance" },
+          { title: "SBMW", description: "SkyBlock Mod Wiki — all mods listed.", href: "https://sbmw.ca/", tag: "Directory" },
         ]}
       />
 
       <ResourceLinks
-        title="YouTube searches"
-        description="Direct intent searches - sort by upload date for current install/setup guides."
+        title="Legacy mods (1.8.9)"
         links={[
-          {
-            title: "Best SkyBlock mods (current patch)",
-            description: "Search: recommended mod list, safe settings, performance.",
-            href: "https://www.youtube.com/results?search_query=hypixel+skyblock+best+mods+settings",
-            tag: "YouTube",
-          },
-          {
-            title: "Sodium / performance setup",
-            description: "Search: FPS boost guide, render settings, optimization.",
-            href: "https://www.youtube.com/results?search_query=minecraft+sodium+fps+boost+settings",
-            tag: "YouTube",
-          },
+          { title: "SBA", description: "QoL features and safety warnings.", href: "https://biscuit.codes/mods/skyblockaddons/", tag: "Legacy" },
+          { title: "NEU", description: "Item info overlays and utilities.", href: "https://github.com/NotEnoughUpdates/NotEnoughUpdates", tag: "Legacy" },
+          { title: "Skytils", description: "Dungeon QoL, solvers, utilities.", href: "https://github.com/Skytils/SkytilsMod", tag: "Legacy" },
+          { title: "OptiFine", description: "FPS for 1.8.9 Forge.", href: "https://optifine.net/downloads", tag: "Legacy" },
+        ]}
+      />
+
+      <ResourceLinks
+        title="Guides &times; YouTube"
+        links={[
+          { title: "Best SkyBlock mods 2025/2026", description: "Search: mod list, safe settings, performance.", href: "https://www.youtube.com/results?search_query=hypixel+skyblock+best+mods+2025", tag: "YouTube" },
+          { title: "Complete modding guide (1.21+)", description: "Full install walkthrough for modern MC.", href: "https://www.youtube.com/results?search_query=hypixel+skyblock+modding+guide+1.21", tag: "YouTube" },
+        ]}
+      />
+
+      <ResourceLinks
+        title="Related pages"
+        links={[
+          { title: "Tricks & Tips", description: "Habits and settings that complement mods.", href: "/tricks", tag: "Route" },
+          { title: "Dungeons", description: "Dungeon-specific mod setups.", href: "/dungeons", tag: "Route" },
+          { title: "Mining", description: "Mining-specific mod overlays.", href: "/mining", tag: "Route" },
         ]}
       />
     </DocsLayout>

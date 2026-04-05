@@ -1,6 +1,8 @@
 import { DocsLayout } from "../../components/docs-layout";
 import { GuideSection } from "../../components/guide-section";
 import { ResourceLinks } from "../../components/resource-links";
+import { DataTable } from "../../components/data-table";
+import { TipCallout } from "../../components/tip-callout";
 
 export default function MiningPage() {
   return (
@@ -86,6 +88,32 @@ export default function MiningPage() {
           plus roughly <strong>150k Mithril</strong> and <strong>1.4m Gemstone</strong> for specific Core upgrades.
         </p>
       </GuideSection>
+
+      <DataTable
+        title="Powder milestone targets"
+        description="How much powder you need and what it unlocks."
+        columns={[
+          { key: "tier", label: "Tier" },
+          { key: "mithril", label: "Mithril" },
+          { key: "gemstone", label: "Gemstone" },
+          { key: "glacite", label: "Glacite" },
+          { key: "unlocks", label: "What It Unlocks" },
+        ]}
+        rows={[
+          { tier: "Starter", mithril: "~2M", gemstone: "~2M", glacite: "—", unlocks: "Basic HotM perks. Can start mining." },
+          { tier: "Mid", mithril: "~5M", gemstone: "~10M", glacite: "~5M", unlocks: "Decent rates. Most perks usable." },
+          { tier: "Serious", mithril: "~10M", gemstone: "~20M", glacite: "~20M", unlocks: "Good rates across all methods." },
+          { tier: "Maxed", mithril: "~12.5M", gemstone: "~24.5M", glacite: "~34.5M", unlocks: "All perks maxed. Peak efficiency." },
+        ]}
+        caption="Daily commission bonus at HotM 10+: 1,600 Mithril / 3,200 Gemstone / 4,000 Glacite."
+      />
+
+      <TipCallout type="tip" title="Powder buffs stack">
+        <p>
+          The <strong>Powder Buff</strong> perk combined with a <strong>Spicy Goblin Omelette</strong> gives roughly
+          <strong> ~70% more powder</strong>. Always activate both before powder mining sessions.
+        </p>
+      </TipCallout>
 
       <GuideSection title="Powder mining (short & effective)">
         <ul>
