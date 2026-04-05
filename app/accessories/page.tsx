@@ -21,7 +21,7 @@ export default function AccessoriesPage() {
           rarity. The higher your total MP, the bigger your reforge stats become.
         </p>
         <p>
-          Here's why MP is so important: it is{" "}
+          Here&apos;s why MP is so important: it is{" "}
           <strong>multiplicative with your accessory reforges</strong>. If you
           have expensive armor and weapons but low MP, your effective damage is
           dramatically lower than someone with the same gear and proper MP. Many
@@ -46,7 +46,7 @@ export default function AccessoriesPage() {
           </strong>
           . A player with 500 MP and budget gear will often outdamage a player
           with 200 MP and top-tier weapons. Before upgrading your sword or armor,
-          check your MP on SkyCrypt and make sure it's appropriate for your
+          check your MP on SkyCrypt and make sure it&apos;s appropriate for your
           progression stage.
         </p>
       </TipCallout>
@@ -183,7 +183,7 @@ export default function AccessoriesPage() {
         <p>
           Prioritizes <strong>Crit Damage</strong> and{" "}
           <strong>Strength</strong>. Best all-around damage stone for most
-          combat-focused players. If you're unsure which to pick, Hurtful is
+          combat-focused players. If you&apos;re unsure which to pick, Hurtful is
           almost never wrong.
         </p>
 
@@ -229,7 +229,7 @@ export default function AccessoriesPage() {
           small amount of stats.
         </p>
         <p>
-          For example, if you're using Hurtful but want a bit more Strength, you
+          For example, if you&apos;re using Hurtful but want a bit more Strength, you
           can tune some points toward Strength without changing your entire Power
           Stone. Tuning is free to adjust at the <strong>Thaumaturgy</strong>{" "}
           NPC.
@@ -239,7 +239,7 @@ export default function AccessoriesPage() {
         <ul>
           <li>
             <strong>General damage (Berserker/Archer):</strong> Tune toward
-            whichever of Strength/Crit Damage is lower. Use SkyCrypt's stat
+            whichever of Strength/Crit Damage is lower. Use SkyCrypt&apos;s stat
             optimizer or aim for a roughly{" "}
             <strong>1:1 Strength to Crit Damage ratio</strong> for maximum
             effective damage.
@@ -266,8 +266,8 @@ export default function AccessoriesPage() {
           Work through accessories by{" "}
           <strong>MP per coin</strong> (cheapest first). Many players waste
           millions on expensive accessories when they still have cheap ones
-          missing. Use the SkyCrypt "Missing Accessories" tab to see which ones
-          you're missing, sorted by price. A Common accessory for 10K coins
+          missing. Use the SkyCrypt &quot;Missing Accessories&quot; tab to see which ones
+          you&apos;re missing, sorted by price. A Common accessory for 10K coins
           gives 3 MP — while a Legendary for 50M gives 16 MP. The cheap ones
           are massively more efficient early on.
         </p>
@@ -338,7 +338,7 @@ export default function AccessoriesPage() {
 
       <TipCallout type="info" title="Recombobulators are efficient MP">
         <p>
-          A <strong>Recombobulator 3000</strong> upgrades any accessory's rarity
+          A <strong>Recombobulator 3000</strong> upgrades any accessory&apos;s rarity
           by one tier, adding MP. At around 5-8M each, recombobulating your
           existing Epic accessories to Legendary is often{" "}
           <strong>cheaper per MP</strong> than buying new Legendary accessories.
@@ -356,7 +356,7 @@ export default function AccessoriesPage() {
           <strong>Enrichments</strong> can be applied to{" "}
           <strong>Legendary and Mythic</strong> rarity accessories. Each
           enrichment adds <strong>+1 MP</strong> and a small stat bonus (like +1
-          Critical Damage, +1 Strength, etc.). They're purchased from the{" "}
+          Critical Damage, +1 Strength, etc.). They&apos;re purchased from the{" "}
           <strong>Bits Shop</strong> (requires a Booster Cookie active).
         </p>
         <p>
@@ -384,7 +384,7 @@ export default function AccessoriesPage() {
                 accessories, start recombobulating.{" "}
                 <strong>End game:</strong> 1200+ MP. Mythic accessories,
                 enrichments, Hegemony Artifact. Check SkyCrypt to see your
-                current MP and what you're missing.
+                current MP and what you&apos;re missing.
               </p>
             ),
           },
@@ -411,7 +411,7 @@ export default function AccessoriesPage() {
                 bonus into a different stat. Visit the{" "}
                 <strong>Thaumaturgy NPC</strong> in the Hub to adjust your
                 tuning. It costs nothing to change and resets are free. You get
-                more tuning points as your MP increases — at 1000+ MP you'll
+                more tuning points as your MP increases — at 1000+ MP you&apos;ll
                 have enough points to make a meaningful difference. The best
                 approach is to check your stats and tune toward whichever
                 offensive stat (Strength or Crit Damage) is lower.
@@ -427,7 +427,7 @@ export default function AccessoriesPage() {
                 <strong>Day/Night Crystal</strong> — cheap and give 8 MP each.{" "}
                 <strong>Wither Artifact</strong> — solid MP and useful Wither
                 damage reduction.{" "}
-                <strong>All Scarf's Studies</strong> — obtainable from Floor 2 of
+                <strong>All Scarf&apos;s Studies</strong> — obtainable from Floor 2 of
                 Dungeons.{" "}
                 <strong>Treasure Ring/Artifact</strong> — from the Jerry
                 Workshop event. Beyond that, work through the cheapest
@@ -454,9 +454,9 @@ export default function AccessoriesPage() {
               <p>
                 The <strong>Hegemony Artifact</strong> is the single highest MP
                 accessory in the game (22 MP, Mythic). It costs several hundred
-                million coins. Whether it's "worth" it depends on your budget —
+                million coins. Whether it&apos;s &quot;worth&quot; it depends on your budget —
                 if you already have 1000+ MP and most other accessories, the
-                Hegemony is a solid upgrade. If you're below 800 MP, your coins
+                Hegemony is a solid upgrade. If you&apos;re below 800 MP, your coins
                 are better spent on cheaper missing accessories and
                 recombobulators.
               </p>

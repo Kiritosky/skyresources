@@ -280,7 +280,7 @@ export default function SlayersPage() {
 
         <h3 className="mt-4 text-base font-semibold">How the RNG Meter Works</h3>
         <p>
-          Every time you kill a slayer boss and <em>don't</em> get a rare drop,
+          Every time you kill a slayer boss and <em>don&apos;t</em> get a rare drop,
           your RNG meter fills up slightly. Once it reaches 100%, you are
           guaranteed to receive the RNG drop you have selected. You can choose
           which drop to target from the slayer menu. The meter progress depends
@@ -326,10 +326,10 @@ export default function SlayersPage() {
       <TipCallout type="warning" title="Slayers Are Coin Sinks">
         <p>
           Slayers cost coins every time you start a quest, and the gear
-          requirements can be expensive. Don't dump all your coins into T4
-          bosses too early — you'll burn through your bank before getting any
+          requirements can be expensive. Don&apos;t dump all your coins into T4
+          bosses too early — you&apos;ll burn through your bank before getting any
           meaningful drops. Start with T3 to build up slayer XP, then move to
-          T4 once you're comfortable with the boss mechanics and have a solid
+          T4 once you&apos;re comfortable with the boss mechanics and have a solid
           coin buffer. <strong>Budget at least 50M</strong> before committing
           to serious T4 grinding on enderman or blaze slayer.
         </p>
@@ -340,7 +340,7 @@ export default function SlayersPage() {
           During <strong>Aatrox</strong> mayor, slayer quests cost 50% less
           coins. This is the best time to grind slayers, especially the
           expensive ones like Voidgloom and Inferno Demonlord. Plan your
-          slayer grinding sessions around Aatrox's election cycle to save
+          slayer grinding sessions around Aatrox&apos;s election cycle to save
           millions of coins over time. Check the mayor schedule on the wiki
           or community trackers.
         </p>
@@ -416,7 +416,7 @@ export default function SlayersPage() {
                 the cheapest, easiest, and has no unlock requirements. Grind
                 it to LVL 3-4, then move to Tarantula, then Sven. The order
                 is forced anyway because each slayer unlocks the next one.
-                Don't skip ahead — the gear and experience you gain from
+                Don&apos;t skip ahead — the gear and experience you gain from
                 earlier slayers helps with later ones.
               </p>
             ),
@@ -440,10 +440,10 @@ export default function SlayersPage() {
             answer: (
               <p>
                 The RNG meter is a pity system for slayer drops. Every boss
-                kill that doesn't give you a rare drop fills the meter
-                slightly. At 100%, you're guaranteed the drop you selected.
+                kill that doesn&apos;t give you a rare drop fills the meter
+                slightly. At 100%, you&apos;re guaranteed the drop you selected.
                 Higher tier bosses fill the meter faster. You can pick which
-                drop to target from the slayer quest menu. It doesn't carry
+                drop to target from the slayer quest menu. It doesn&apos;t carry
                 over between different drop types — if you switch targets, the
                 meter resets for the new target.
               </p>
@@ -460,7 +460,7 @@ export default function SlayersPage() {
                 the DPS check phase, and Wither Skeleton or Ender Dragon pet.
                 Bring Florid Zombie Sword for healing and make sure you have
                 enough mana sustain. T4 Voidgloom is a genuine DPS check —
-                you need strong gear or you'll time out.
+                you need strong gear or you&apos;ll time out.
               </p>
             ),
           },
@@ -470,7 +470,7 @@ export default function SlayersPage() {
               <p>
                 T5 Rev is mainly for the <strong>Warden Heart</strong> drop,
                 which is extremely rare but worth 200M-400M. The boss itself
-                is mechanically harder than T4 with additional phases. It's
+                is mechanically harder than T4 with additional phases. It&apos;s
                 worth doing once you have strong enough gear to kill it
                 quickly and a large enough budget to absorb the quest costs.
                 During Aatrox mayor, T5 Rev grinding becomes significantly

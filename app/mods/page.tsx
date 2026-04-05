@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { DocsLayout } from "../../components/docs-layout";
 import { GuideSection } from "../../components/guide-section";
 import { ResourceLinks } from "../../components/resource-links";

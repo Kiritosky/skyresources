@@ -60,8 +60,8 @@ function SearchDialog({ onClose }: { onClose: () => void }) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-start justify-center bg-black/60 pt-[15vh] backdrop-blur-sm"
-      onClick={onClose}
+        className="fixed inset-x-0 bottom-0 top-14 z-30 flex items-start justify-center bg-transparent pt-8 sm:pt-12"
+        onClick={onClose}
     >
       <div
         className="w-full max-w-lg rounded-2xl border bg-card shadow-2xl"

@@ -78,7 +78,7 @@ export default function SkillsPage() {
             Caps at Level 25. Grants no stat; mostly cosmetic.
           </li>
           <li>
-            <strong>Social</strong> — Gain XP when visiting other players'
+            <strong>Social</strong> — Gain XP when visiting other players&apos;
             islands. Caps at Level 25. Very slow to grind.
           </li>
           <li>
@@ -230,10 +230,9 @@ export default function SkillsPage() {
 
       <TipCallout type="warning" title="Don't spread too thin early on">
         <p>
-          It is tempting to level every skill evenly. <strong>Don't.</strong>{" "}
-          Pick <strong>2-3 skills</strong> that align with your current goals and
-          focus there. For example: Combat + Farming if you're doing Slayers and
-          Garden, or Mining + Combat if you're pushing Dungeons and Crystal
+          It is tempting to level every skill evenly. <strong>Don&apos;t.</strong>{" "}
+          focus there. For example: Combat + Farming if you&apos;re doing Slayers and
+          Garden, or Mining + Combat if you&apos;re pushing Dungeons and Crystal
           Hollows. The early levels of neglected skills are fast to catch up on
           later.
         </p>
@@ -254,9 +253,8 @@ export default function SkillsPage() {
 
         <h3 className="mt-4 text-base font-semibold">Farming</h3>
         <p>
-          Critical if you're investing in the <strong>Garden</strong>. Farming
-          level affects your farming fortune, crop contest scores, and unlocks
-          key Garden milestones. It's also one of the most reliable money makers
+          Critical if you&apos;re investing in the <strong>Garden</strong>. Farming
+          key Garden milestones. It&apos;s also one of the most reliable money makers
           with maxed crops.
         </p>
 
@@ -271,7 +269,7 @@ export default function SkillsPage() {
         <h3 className="mt-4 text-base font-semibold">Enchanting & Alchemy</h3>
         <p>
           Both give <strong>Intelligence</strong>, which matters for Mage builds
-          and ability damage. More importantly, they're{" "}
+          and ability damage. More importantly, they&apos;re{" "}
           <strong>easy to level</strong> — Alchemy can be speed-leveled in a few
           hours, and Enchanting gives daily passive XP through the
           Experimentation Table. Level these for cheap Skill Average gains.
@@ -336,7 +334,7 @@ export default function SkillsPage() {
       <TipCallout type="info" title="Skill Average and profiles">
         <p>
           Your Skill Average is calculated across all skills, weighted equally.
-          On SkyCrypt, you can see your "true" SA which includes overflow. Many
+          On SkyCrypt, you can see your &quot;true&quot; SA which includes overflow. Many
           guilds and party finders use SA as a quick competence check. A{" "}
           <strong>SA of 40+</strong> is generally considered mid-game,{" "}
           <strong>50+</strong> is late-game, and <strong>55+</strong> is
@@ -368,9 +366,9 @@ export default function SkillsPage() {
             question: "Does Skill Average actually matter?",
             answer: (
               <p>
-                Yes, but indirectly. SA doesn't give direct stats — it's a{" "}
+                Yes, but indirectly. SA doesn&apos;t give direct stats — it&apos;s a{" "}
                 <strong>reputation metric</strong>. Guilds use it to evaluate
-                applicants, party finders use it to filter players, and it's a
+                applicants, party finders use it to filter players, and it&apos;s a
                 general indicator of progression. Some features may gate behind
                 cumulative skill requirements. At minimum, aim for{" "}
                 <strong>SA 40</strong> by mid-game and <strong>SA 50+</strong> by
@@ -385,7 +383,7 @@ export default function SkillsPage() {
               <p>
                 Once a skill hits its cap (usually 60), any additional XP is
                 stored as <strong>overflow XP</strong>. This overflow counts
-                toward your "true" Skill Average shown on SkyCrypt. For example,
+                toward your &quot;true&quot; Skill Average shown on SkyCrypt. For example,
                 if you have 100M overflow in Combat, that might add 0.5-1.0 to
                 your displayed SA. Overflow is tracked per skill and there is no
                 upper limit. This means grinding your favorite skill past 60
@@ -419,7 +417,7 @@ export default function SkillsPage() {
                 is tedious but can be done passively by buying cheap runes.
                 Social requires visiting other islands (use the hub). Neither
                 gives meaningful stats. Level them last, or ignore them entirely
-                unless you're chasing a specific SA number.
+                unless you&apos;re chasing a specific SA number.
               </p>
             ),
           },

@@ -346,7 +346,7 @@ export default function CrimsonIslePage() {
             answer: (
               <p>
                 Yes, but it costs you <strong>50% of your current
-                reputation</strong>. Talk to the opposite faction's NPC to
+                reputation</strong>. Talk to the opposite faction&apos;s NPC to
                 switch. This is generally not recommended unless you are very
                 early in the reputation grind (under 1,000 rep). If you are
                 already past Trusted rank, switching will set you back

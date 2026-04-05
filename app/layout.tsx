@@ -1,22 +1,15 @@
-// File: app/layout.tsx
 import type { Metadata } from "next";
-import { Inter, Orbitron } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { SiteHeader } from "../components/site-header";
 import { SiteFooter } from "../components/site-footer";
 
-const inter = Inter({
-    variable: "--font-inter",
+const roboto = Roboto({
+    variable: "--font-roboto",
     subsets: ["latin"],
-    display: "swap",
-});
-
-const orbitron = Orbitron({
-    variable: "--font-orbitron",
-    subsets: ["latin"],
-    weight: ["400", "700"],
+    weight: ["400", "500", "700"],
     display: "swap",
 });
 
@@ -33,7 +26,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className="dark">
-        <body className={`${inter.variable} ${orbitron.variable} min-h-dvh antialiased`}>
+        <body className={`${roboto.variable} min-h-dvh antialiased`}>
         <SiteHeader />
         <SpeedInsights />
         <Analytics />

@@ -38,7 +38,7 @@ export default function PetsPage() {
           </li>
           <li>
             <strong>Pet items:</strong> You can equip one pet item to modify or
-            enhance a pet's abilities.
+            enhance a pet&apos;s abilities.
           </li>
           <li>
             <strong>Pet score:</strong> Owning unique pets at higher rarities
@@ -197,7 +197,7 @@ export default function PetsPage() {
 
         <h3 className="mt-4 text-base font-semibold">Kat Upgrades</h3>
         <p>
-          <strong>Kat</strong> is an NPC in the Hub who can upgrade a pet's
+          <strong>Kat</strong> is an NPC in the Hub who can upgrade a pet&apos;s
           rarity for coins and time. The upgrade path goes: Common &rarr;
           Uncommon &rarr; Rare &rarr; Epic &rarr; Legendary. Each step costs
           more coins and takes longer. Upgrading from Epic to Legendary is
@@ -242,7 +242,7 @@ export default function PetsPage() {
         <ul>
           <li>
             <strong>Textbook:</strong> Grants bonus Intelligence based on the
-            pet's level. Great for Enchanting XP and mage builds.
+            pet&apos;s level. Great for Enchanting XP and mage builds.
           </li>
           <li>
             <strong>Shelmet:</strong> Reduces incoming damage. Good for
@@ -281,7 +281,7 @@ export default function PetsPage() {
           Golden Dragon is the single strongest pet in the game but costs{" "}
           <strong>billions of coins</strong> and requires leveling to{" "}
           <strong>Level 200</strong> (which takes an enormous amount of XP).
-          Don't rush it. A Legendary Ender Dragon or Tiger will carry you
+          Don&apos;t rush it. A Legendary Ender Dragon or Tiger will carry you
           through 95% of combat content at a fraction of the price. Only invest
           in Golden Dragon when you have the funds and are pushing true endgame.
         </p>
@@ -291,8 +291,8 @@ export default function PetsPage() {
         <p>
           Pet score milestones give <strong>permanent stat boosts</strong> to
           your profile. Unique pets at higher rarities give more points.
-          Collecting cheap Common/Uncommon pets you don't use still counts toward
-          milestones. It's one of the most overlooked free stat upgrades in the
+          Collecting cheap Common/Uncommon pets you don&apos;t use still counts toward
+          milestones. It&apos;s one of the most overlooked free stat upgrades in the
           game.
         </p>
       </TipCallout>
@@ -372,7 +372,7 @@ export default function PetsPage() {
             question: "Should I upgrade rarity with Kat or buy directly?",
             answer: (
               <p>
-                Always compare Kat's upgrade cost (coins + wait time) against
+                Always compare Kat&apos;s upgrade cost (coins + wait time) against
                 the Auction House price of the higher-rarity pet. For common
                 pets, Kat is usually cheaper. For popular pets like Ender
                 Dragon or Golden Dragon, buying directly from the AH is often
@@ -401,9 +401,9 @@ export default function PetsPage() {
             question: "How does autopet work?",
             answer: (
               <p>
-                Autopet lets you create rules like "When I enter the Garden,
-                equip my Elephant pet" or "When I enter the Catacombs, equip
-                my Wither Skeleton." You unlock the first rule slot at{" "}
+                Autopet lets you create rules like &quot;When I enter the Garden,
+                equip my Elephant pet&quot; or &quot;When I enter the Catacombs, equip
+                my Wither Skeleton.&quot; You unlock the first rule slot at{" "}
                 <strong>10 pet score</strong> and gain additional slots at
                 higher milestones. Rules are evaluated in priority order from
                 top to bottom. You can set conditions based on location, item
@@ -415,7 +415,7 @@ export default function PetsPage() {
             question: "What is the fastest way to level a pet?",
             answer: (
               <p>
-                It depends on the pet's skill type. For <strong>Combat pets</strong>,
+                It depends on the pet&apos;s skill type. For <strong>Combat pets</strong>,
                 grinding Catacombs floors or enderman slayer gives massive XP.
                 For <strong>Mining pets</strong>, commissions and mining in the
                 Crystal Hollows or Glacite Tunnels. Using the{" "}

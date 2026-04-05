@@ -7,11 +7,11 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  /* next/font variables from app/layout.tsx */
-  --font-sans: var(--font-inter);
-  --font-heading: var(--font-orbitron);
+  /* Fonts */
+  --font-sans: var(--font-roboto);
+  --font-heading: var(--font-roboto);
 
-  /* brand accents */
+  /* Brand accents */
   --color-hypixel-gold: #f6c453;
   --color-hypixel-purple: #8b5cf6;
   --color-garden: #34d399;
@@ -21,7 +21,7 @@
   --color-news: #f472b6;
   --color-shards: #38bdf8;
 
-  /* new page accents */
+  /* Page accents */
   --color-pets: #fb923c;
   --color-slayers: #f87171;
   --color-skills: #2dd4bf;
@@ -140,9 +140,7 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-/* ───────────────────────────────────────────────
-   Keyframe Animations
-   ─────────────────────────────────────────────── */
+/* Animations */
 
 @keyframes fade-in-up {
   from {
@@ -156,30 +154,45 @@
 }
 
 @keyframes gradient-shift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 @keyframes pulse-glow {
-  0%, 100% { opacity: 0.5; }
-  50% { opacity: 1; }
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
 }
 
-/* ───────────────────────────────────────────────
-   Utilities
-   ─────────────────────────────────────────────── */
+/* Utilities */
 
 @layer utilities {
   .font-heading {
     font-family: var(--font-heading), var(--font-sans), system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0;
   }
 
-  /* Accent colors — existing */
+  /* Existing accents */
   .accent-gold { color: var(--color-hypixel-gold); }
   .accent-garden { color: var(--color-garden); }
   .accent-money { color: var(--color-money); }
@@ -188,7 +201,7 @@
   .accent-news { color: var(--color-news); }
   .accent-shards { color: var(--color-shards); }
 
-  /* Accent colors — new pages */
+  /* New page accents */
   .accent-pets { color: var(--color-pets); }
   .accent-slayers { color: var(--color-slayers); }
   .accent-skills { color: var(--color-skills); }
@@ -200,13 +213,13 @@
   .accent-collections { color: var(--color-collections); }
   .accent-enchanting { color: var(--color-enchanting); }
 
-  /* Staggered entrance animation */
+  /* Staggered entrance */
   .animate-fade-in-up {
     animation: fade-in-up 0.5s ease-out both;
     animation-delay: var(--delay, 0s);
   }
 
-  /* Animated gradient background for hero */
+  /* Animated hero gradient */
   .bg-gradient-animated {
     background: linear-gradient(135deg, var(--color-hypixel-gold), var(--color-hypixel-purple), var(--color-dungeons), var(--color-hypixel-gold));
     background-size: 300% 300%;
@@ -221,7 +234,7 @@
     background-clip: text;
   }
 
-  /* Subtle grid background pattern */
+  /* Subtle grid pattern */
   .bg-grid {
     background-image:
       linear-gradient(to right, oklch(1 0 0 / 4%) 1px, transparent 1px),
@@ -229,7 +242,7 @@
     background-size: 48px 48px;
   }
 
-  /* Glow borders per accent */
+  /* Glow borders */
   .glow-gold:hover { box-shadow: 0 0 24px -4px var(--color-hypixel-gold); }
   .glow-garden:hover { box-shadow: 0 0 24px -4px var(--color-garden); }
   .glow-money:hover { box-shadow: 0 0 24px -4px var(--color-money); }
@@ -249,7 +262,7 @@
   .glow-enchanting:hover { box-shadow: 0 0 24px -4px var(--color-enchanting); }
 }
 
-/* Default to dark like a SkyBlock hub */
+/* Keep default dark color-scheme */
 html {
   color-scheme: dark;
 }
@@ -259,11 +272,17 @@ html {
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground font-sans leading-relaxed;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
-  h1, h2, h3, h4 {
-    @apply font-heading;
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading tracking-normal leading-tight;
   }
 
   a {

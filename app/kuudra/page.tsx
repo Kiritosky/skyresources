@@ -126,7 +126,7 @@ export default function KuudraPage() {
         <h3 className="text-base font-semibold">Mage</h3>
         <p>
           The Mage clears adds (smaller mobs) using{" "}
-          <strong>Hyperion's Wither Impact</strong> ability. This is critical
+          <strong>Hyperion&apos;s Wither Impact</strong> ability. This is critical
           in higher tiers where adds can overwhelm the party. Mages also
           contribute to general DPS during the weakness phase.
         </p>
@@ -281,7 +281,7 @@ export default function KuudraPage() {
 
         <h3 className="mt-4 text-base font-semibold">Phase 4: Kuudra weakness</h3>
         <p>
-          After the ballista breaks Kuudra's shield, it becomes vulnerable to
+          After the ballista breaks Kuudra&apos;s shield, it becomes vulnerable to
           direct damage. This is when the DPS player goes all-out with
           Terminator or other high-damage weapons. The window is limited, so
           maximizing damage during this phase is crucial. Tank holds aggro,
