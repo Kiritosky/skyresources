@@ -1,26 +1,24 @@
 ---
 title: Pets
 description: Everything about SkyBlock pets — how they work, the best pets per activity, pet items, and leveling.
-lastUpdated: "2026-04-05"
+lastUpdated: "2026-04-06"
 tags: [pets, pet items, pet score, leveling, legendary, kat, taming, best pets]
 ---
 
 ## How Pets Work
 
-Pets are companions that give passive bonuses while equipped. You can only have **one pet active at a time**. Each pet has:
-- A **type** (Combat, Mining, Farming, etc.)
-- A **rarity** (Common → Legendary → Mythic)
-- A **level** (1–100)
-- Optional **Pet Items** (equip one item per pet to boost it)
+Pets are companions that give passive bonuses while equipped. Only **one pet can be active** at a time. Each pet has a type (Combat, Mining, Farming, etc.), a rarity, a level (1–100), and an optional **Pet Item** slot.
 
-Pet bonuses scale with **both level and rarity**. A Legendary pet at Level 100 is dramatically stronger than a Rare pet at Level 1.
+Pet bonuses scale with **both level and rarity**. A Legendary pet at Level 100 dramatically outperforms a Rare pet at Level 1.
 
 ---
 
 ## Pet Rarities & Stats
 
-| Rarity | Color | Base Stat Multiplier | Magic Power |
-|--------|-------|---------------------|------------|
+<TableCard title="Rarity Multipliers">
+
+| Rarity | Color | Base Stat Multiplier | Magical Power |
+|--------|-------|---------------------|--------------|
 | Common | Gray | 1× | 3 |
 | Uncommon | Green | 1.2× | 5 |
 | Rare | Blue | 1.5× | 8 |
@@ -28,95 +26,123 @@ Pet bonuses scale with **both level and rarity**. A Legendary pet at Level 100 i
 | Legendary | Gold | 2.5× | 16 |
 | Mythic | Pink | 3× | 22 |
 
-<Tip title="Rarity upgrade vs. new pet">
-Upgrading an existing pet's rarity (via Kat's Workshop) is usually cheaper than buying a new one at a higher rarity. Always check Kat's cost vs. Bazaar/AH price.
+</TableCard>
+
+<Tip title="Rarity upgrade vs. buying a new pet">
+Upgrading an existing pet's rarity at Kat's Workshop is usually cheaper than buying the same pet at a higher rarity on the Auction House. Always compare costs before deciding.
 </Tip>
 
 ---
 
 ## Best Pets by Activity
 
+<Tabs>
+<Tab label="Farming">
+
 | Activity | Best Pet | Budget Alternative |
 |----------|---------|-------------------|
-| Farming (crops) | Legendary Elephant | Legendary Rabbit |
-| Farming (mushroom) | Legendary Mooshroom Cow | Leg. Elephant |
-| Mining | Legendary Quick Claw | Legendary Mole |
-| Dungeons (Mage) | Legendary Ender Dragon | Leg. Baby Yeti |
-| Dungeons (Archer) | Legendary Baby Yeti | Leg. Tiger |
-| Dungeons (Berserk) | Legendary Tiger | Leg. Skeleton Horse |
-| Combat / Slayers | Legendary Tiger | Leg. Lion |
+| Crop farming | Legendary Elephant | Legendary Rabbit |
+| Mushroom farming | Legendary Mooshroom Cow | Legendary Elephant |
+| Nether Wart | Legendary Mooshroom Cow | Rabbit |
+
+</Tab>
+<Tab label="Mining">
+
+| Activity | Best Pet | Budget Alternative |
+|----------|---------|-------------------|
+| Gemstone mining | Legendary Quick Claw | Legendary Mole |
+| General mining | Legendary Mole | Rare Mole |
+| Powder farming | Legendary Bal | Mole |
+
+</Tab>
+<Tab label="Dungeons">
+
+| Class | Best Pet | Budget Alternative |
+|-------|---------|-------------------|
+| Mage | Legendary Ender Dragon | Legendary Baby Yeti |
+| Archer | Legendary Baby Yeti | Legendary Tiger |
+| Berserk | Legendary Tiger | Legendary Skeleton Horse |
+| Healer | Legendary Baby Yeti | Any int pet |
+
+</Tab>
+<Tab label="Other">
+
+| Activity | Best Pet | Budget Alternative |
+|----------|---------|-------------------|
 | Fishing | Legendary Whale | Legendary Dolphin |
-| Alchemy | Legendary Silverfish | Any Int pet |
+| Combat / Slayers | Legendary Tiger | Legendary Lion |
 | Foraging | Legendary Ocelot | Rare Ocelot |
+| Alchemy | Legendary Silverfish | Any Intelligence pet |
 | Enchanting XP | Legendary Rabbit | Any |
 
+</Tab>
+</Tabs>
+
 <Warning title="Pets are activity-specific">
-There is no single "best pet" — you should swap pets based on what you're doing. SkyHanni mod can auto-swap pets based on the tool you equip.
+There is no single "best pet" — swap based on what you're doing. SkyHanni can auto-swap pets based on the tool you equip.
 </Warning>
 
 ---
 
 ## Pet Leveling
 
-Pets gain XP automatically as you do the activity they're associated with. To level faster:
-- **Use the correct pet for your activity** — a Combat pet gains XP from killing mobs, not farming.
-- **Pet XP boost** from accessories and Taming skill increases XP gain.
-- **Kat's Workshop** — pay Kat (in Hub) coins + materials to instantly level a pet.
+Pets gain XP from the activity matching their type. To level faster:
+
+- **Use the right pet** — a Combat pet gains XP from kills, not farming
+- **Taming skill** increases pet XP gain passively
+- **Kat's Workshop** — pay coins + materials to instantly level pets
 
 ### Kat's Workshop
-Kat can upgrade pets two ways:
-1. **Level up** — pay coins to jump multiple levels instantly.
-2. **Rarity upgrade** — pay coins + items to upgrade e.g. Rare → Epic.
 
-Kat takes time to finish (hours/days in real time). Queue your most valuable pet first.
+Kat (in the Hub) can:
+1. **Level up** — pay coins to jump multiple levels instantly
+2. **Rarity upgrade** — pay coins + items to upgrade e.g. Rare → Epic
+
+Kat takes real time to finish (hours/days). Queue your most valuable pet first so it's working while you play.
 
 ---
 
 ## Pet Items
 
-Pet Items equip into your active pet's slot for passive bonuses. Some are universal, some are type-specific.
+Equip one Pet Item per active pet for passive bonuses.
+
+<TableCard title="Useful Pet Items">
 
 | Pet Item | Effect | Best For |
 |---------|--------|---------|
-| Tier Boost | +1 rarity (visual only for stats) | Budget alternative to upgrading |
-| Lucky Clover | +Pet Luck | Any |
+| Tier Boost | +1 rarity (visual only, still gives stat boost) | Budget alternative to upgrading |
+| Lucky Clover | +Pet Luck | Any pet |
 | Ender Artifact | +Attack Speed vs Endermen | Voidgloom Slayer |
-| Mining Exp Boost | +Taming XP from mining | Mining pets |
-| Textbook | +5 Int per level | Int/Mage builds |
-| Mole | Underground tunneling | Mole pet (stacks) |
+| Textbook | +5 Int per level | Mage builds |
 | Farming Exp Boost | +Farming XP gain | Elephant / Rabbit |
 | Mark of the Otter | +Sea Creature Chance | Fishing pets |
+| Mining Exp Boost | +Mining XP | Mining pets |
+
+</TableCard>
 
 ---
 
 ## Pet Score
 
-**Pet Score** is a meta-progression reward system. You earn score by:
-- Leveling pets to Level 100 (each unique pet at 100 gives score)
-- Reaching certain milestones
-
-Pet Score rewards include:
-- **Magic Find** bonuses
-- **Pet Luck** bonuses
-- Special cosmetic items
+**Pet Score** is a meta-progression system. Earn score by leveling pets to Level 100. Rewards include **Magic Find** and **Pet Luck** bonuses.
 
 <Info title="Farm Pet Score early">
-Even cheap Common/Uncommon pets give Pet Score when maxed. Leveling 10–15 cheap pets to 100 is a worthwhile early investment for the Magic Find bonus.
+Even cheap Common/Uncommon pets give Pet Score when maxed. Leveling 10–15 cheap pets to Level 100 is a worthwhile early investment for the Magic Find bonus — it helps with every drop in the game.
 </Info>
 
 ---
 
 ## Taming Skill
 
-The **Taming skill** increases your **Pet Luck** — the chance to find higher-rarity pets and egg drops. It also gives XP multipliers.
+The **Taming skill** increases **Pet Luck** — the chance to find higher-rarity pets and better egg drops.
 
 | Taming Level | Key Bonus |
 |-------------|-----------|
-| 1–10 | Small pet luck |
+| 1–10 | Small Pet Luck increase |
 | 25 | +5 Pet Luck |
 | 50 | +10 Pet Luck total |
 
-Taming XP comes from any pet being active while you do activities. Some pets (like the Rock) give passive Taming XP.
+Taming XP comes passively from any pet being active during activities. The Rock pet gives passive Taming XP just from being held.
 
 ---
 

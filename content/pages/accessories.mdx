@@ -1,23 +1,25 @@
 ---
-title: Accessories & Magic Power
-description: How Magic Power works, MP breakpoints, accessory bag upgrades, power stones, and tuning.
-lastUpdated: "2026-04-05"
-tags: [accessories, magic power, MP, talisman, ring, accessory bag, power stone, tuning, recombobulator]
+title: Accessories & Magical Power
+description: How Magical Power works, the power formula, accessory bag upgrades, power stones, and tuning.
+lastUpdated: "2026-04-06"
+tags: [accessories, magical power, MP, talisman, ring, accessory bag, power stone, tuning, recombobulator]
 ---
 
 ## What Are Accessories?
 
-Accessories (also called **Talismans, Rings, Orbs, Artifacts, Relics**) are special items you equip in your **Accessory Bag**. They give passive stat bonuses and contribute **Magic Power (MP)** to your profile.
+Accessories (also called **Talismans, Rings, Orbs, Artifacts, Relics**) are special items equipped in your **Accessory Bag**. They give passive stat bonuses and contribute **Magical Power (MP)** to your profile.
 
-Accessories do **not** take up inventory space — they go in your Accessory Bag (opened via the Backpack icon in your inventory).
+Accessories do **not** take up inventory space — they go in your Accessory Bag (open via the Backpack icon in your inventory).
 
 ---
 
-## Magic Power (MP)
+## Magical Power (MP)
 
-**Magic Power** is the single most important stat from accessories. It's a cumulative power score that boosts all your combat stats via your chosen **Power Stone**.
+**Magical Power** is the single most important stat from accessories. It is a cumulative score calculated from all your equipped accessories, and it scales your combat stats via your chosen **Power Stone**.
 
 ### MP per Rarity
+
+<TableCard title="Magical Power by Accessory Rarity">
 
 | Rarity | MP per accessory |
 |--------|----------------|
@@ -30,43 +32,43 @@ Accessories do **not** take up inventory space — they go in your Accessory Bag
 | Special | 3 |
 | Very Special | 5 |
 
+</TableCard>
+
 <Warning title="No duplicate MP">
-Each **unique accessory family** only counts its highest-rarity version toward MP. If you have a Haste Ring (Rare) and a Haste Artifact (Epic), only the Epic version contributes MP. Remove duplicates — they waste bag space.
+Each **unique accessory family** only counts its highest-rarity version toward MP. If you have a Haste Ring (Rare) and a Haste Artifact (Epic), only the Epic version contributes MP. Remove duplicates — they waste bag slots.
 </Warning>
 
 ---
 
-## MP Breakpoints
+## How MP Scales Your Stats
 
-MP gives bonus stats at every 10-point milestone. The most important breakpoints are:
+MP scales stats using a **logarithmic formula** — not fixed breakpoints. Every point of MP you gain contributes to your stat bonus, but the gain per point decreases as your total MP grows higher.
 
-| MP | Effect |
-|----|--------|
-| 10 | First bonus |
-| 100 | Moderate stat boost |
-| 200 | Good baseline |
-| 300 | **Major bonus — priority target** |
-| 400 | Strong |
-| 500 | **Big damage multiplier — second priority** |
-| 600 | Very strong |
-| 700 | Common endgame target |
-| 800 | Excellent — significant cost |
-| 900+ | Min-maxed |
+This means:
+- Going from **0 → 300 MP** gives the biggest relative impact per coin spent
+- Going from **700 → 800 MP** still helps, but costs far more to achieve the same relative gain
+- There are **no hard "breakpoints"** — stats increase continuously as MP increases
 
-<Tip title="Hit 300 MP first">
-If you're below 300 MP, focus there first. The 300 MP milestone gives one of the largest single jumps in combat power in the game. Fill your bag with any accessories you can afford to reach it.
+<Tip title="Aim for 300 MP first">
+The early MP range (0–300) gives the best return on investment. Filling your bag with mid-rarity accessories before chasing rare upgrades is almost always the right call.
 </Tip>
+
+<StatRow>
+  <Stat label="~300 MP" value="Good baseline" note="Accessible mid-game target" trend="up" />
+  <Stat label="~500 MP" value="Strong" note="Late-game standard" trend="up" />
+  <Stat label="~700 MP" value="Endgame" note="Significant investment required" trend="up" />
+  <Stat label="900+ MP" value="Min-maxed" note="Diminishing returns territory" trend="neutral" />
+</StatRow>
 
 ---
 
 ## Accessory Bag Upgrades
 
-Your Accessory Bag starts small and expands over time. Bag upgrades come from:
-- **Community Shop** (Hub NPC) — buy with coins
-- **Profile upgrades** — some bag slots are unlocked through profile progression
+Your Accessory Bag starts small and expands via:
+- **Community Shop** (Hub NPC) — buy bag upgrades with coins
+- **Profile upgrades** — some slots from SkyBlock Level milestones
 - **Collections** — certain collection milestones grant bag space
 
-### Approximate bag sizes by stage:
 | Stage | Bag Slots |
 |-------|----------|
 | Early game | 15–25 |
@@ -78,26 +80,31 @@ Your Accessory Bag starts small and expands over time. Bag upgrades come from:
 
 ## Power Stones
 
-A **Power Stone** is a special accessory that determines how your MP converts to stats. You equip one at a time via your Accessory Bag interface.
+A **Power Stone** is a special accessory that determines how your MP converts to stats. Equip one at a time via the star icon in your Accessory Bag interface.
+
+<TableCard title="Power Stones by Playstyle">
 
 | Power Stone | Bonus Focus | Best For |
 |-------------|------------|---------|
 | Sorrow | Strength | Berserk / Combat |
 | Fierce | Crit Damage | Archer / DPS |
-| Spiritual | Speed + Int | Mage / movement |
-| Silky | Farming Fortune | Farming |
+| Spiritual | Speed + Intelligence | Mage / movement |
+| Silky | Farming Fortune | Farming builds |
 | Precise | Crit Chance | Early-mid players |
 | Bubba | Fishing Fortune | Fishing builds |
+| Bizarre | Magic Find | Farming for drops |
+
+</TableCard>
 
 <Info title="Check your Power Stone">
-Go to your Accessory Bag → click the star icon → choose Power Stone. Make sure it matches your playstyle. Many players forget to change it when switching content.
+Many players forget to change their Power Stone when switching content. Use SkyHanni's alert system or make it part of your routine when changing activities.
 </Info>
 
 ---
 
 ## Tuning
 
-**Tuning** lets you spend **Tuning Points** (earned from HP milestones and certain quests) to permanently boost stats. You choose which stat to put each point into.
+**Tuning** lets you spend **Tuning Points** (earned from Magical Power milestones and certain quests) to permanently boost specific stats. Points are limited — choose carefully.
 
 | Activity | Recommended Tuning |
 |----------|-------------------|
@@ -106,7 +113,7 @@ Go to your Accessory Bag → click the star icon → choose Power Stone. Make su
 | Farming | Farming Fortune |
 | Mining | Mining Fortune → Speed |
 
-Tuning points are limited — choose carefully. You can reset tuning but it costs coins.
+You can reset tuning but it costs coins. Avoid wasting points on stats you won't use.
 
 ---
 
@@ -114,29 +121,45 @@ Tuning points are limited — choose carefully. You can reset tuning but it cost
 
 The **Recombobulator 3000** upgrades an accessory's rarity by one tier (e.g. Rare → Epic). It's one of the most powerful tools for boosting MP.
 
-- Bought from the **Dark Auction** or player Auction House
-- Currently costs ~15–30M coins per Recombobulator
+- Bought from the **Dark Auction** or the Auction House
+- Costs roughly **15–30M coins** per Recombobulator
 - Best used on accessories you plan to keep long-term
-- Priority: Upgrade your highest-MP accessories first (Legendary → Mythic if possible)
+- **Always upgrade your highest-rarity pieces first** — a Legendary → Mythic upgrade (+6 MP) gives 3× more MP per Recombobulator than a Common → Uncommon (+2 MP)
 
-<Warning title="Don't waste Recombobulators on common accessories">
-Upgrading a Common accessory (3 MP → 5 MP = +2 MP) costs the same Recombobulator as upgrading a Legendary to Mythic (16 MP → 22 MP = +6 MP). Always upgrade the highest rarity piece you have.
+<Warning title="Don't waste Recombobulators on low-rarity pieces">
+Upgrading Common → Uncommon (+2 MP) costs the same Recombobulator as Legendary → Mythic (+6 MP). Always apply to the highest-rarity piece you have.
 </Warning>
 
 ---
 
 ## Reforging Accessories
 
-Reforging your accessories can give meaningful bonuses. The **Warped** reforge gives the most Magic Power from Enchanting/Combat stats per piece.
+<TableCard title="Popular Accessory Reforges">
 
 | Reforge | Best For |
 |---------|---------|
-| Warped | Magic Find + damage (most popular) |
+| Warped | Magic Find + damage (most popular overall) |
 | Itchy | Crit Damage builds |
 | Lucky | Crit Chance builds |
 | Spiked | Strength builds |
 
-Most players use **Warped** as their default accessory reforge unless specifically building for one stat.
+</TableCard>
+
+Most players default to **Warped** unless building for a specific stat. It provides the best general Magic Find and damage scaling.
+
+---
+
+## Checklist: Building Your Accessory Bag
+
+<Checklist title="MP optimization steps">
+- Remove all duplicate accessories (keep highest rarity only)
+- Fill empty slots with any accessible accessories you can find
+- Equip a Power Stone that matches your current activity
+- Set your Tuning Points — don't leave them unspent
+- Recombobulate your highest-rarity pieces when you can afford it
+- Aim for 300 MP before buying expensive individual upgrades
+- Use SkyCrypt to audit your MP and find easy-to-fill gaps
+</Checklist>
 
 ---
 

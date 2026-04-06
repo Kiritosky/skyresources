@@ -1,43 +1,49 @@
 ---
 title: Slayers
 description: All 6 slayer types, how the mechanic works, XP requirements, boss tiers, and key drops.
-lastUpdated: "2026-04-05"
+lastUpdated: "2026-04-06"
 tags: [slayers, revenant, tarantula, sven, voidgloom, inferno, vampire, boss, XP, drops]
 ---
 
 ## How Slayers Work
 
-Slayers are quest-based boss encounters. You:
-1. Talk to **Maddox the Slayer** (or slayer NPC in the relevant area) to accept a quest.
-2. Kill mobs of the matching type to fill the quest XP bar.
-3. When the bar fills, your personal slayer boss spawns — only you (and party) can see and damage it.
-4. Kill the boss within the time limit to complete the quest.
-5. Completing quests earns **Slayer XP** toward that slayer's level (1–9).
+Slayers are quest-based boss encounters. You accept a quest from **Maddox the Slayer** (Hub), kill mobs of the matching type to fill a progress bar, then your personal boss spawns and only you (and party members) can see and damage it.
+
+<Steps title="Starting a slayer" steps={[
+  { label: "Accept a quest", description: "Talk to Maddox the Slayer in the Hub or the NPC in the relevant area.", status: "done" },
+  { label: "Kill mobs", description: "Fill the quest XP bar by killing mobs of the matching type.", status: "done" },
+  { label: "Boss spawns", description: "When the bar fills, your personal slayer boss spawns — only visible to you and your party.", status: "current" },
+  { label: "Kill the boss", description: "Defeat it within the time limit to complete the quest and earn Slayer XP.", status: "upcoming" }
+]} />
 
 Higher slayer levels unlock better drops, crafting recipes, and permanent stat bonuses.
 
 <Warning title="Only you can damage your boss">
-Each player's slayer boss is personal — other players can't steal your boss, but they also can't help kill it (unless you're in the same party). Make sure your gear is strong enough before going up a tier.
+Each player's slayer boss is personal — other players cannot steal it, but they also cannot help kill it unless they are in your party. Make sure your gear is strong enough before going up a tier.
 </Warning>
 
 ---
 
 ## Slayer Types
 
+<TableCard title="All 6 Slayer Types" description="Each slayer has its own location, boss, and unique drops.">
+
 | Slayer | Location | Boss Name | Key Drops |
 |--------|---------|-----------|----------|
 | Zombie | Graveyard / any area | Revenant Horror | Revenant Catalyst, Undead Sword |
 | Spider | Spider's Den | Tarantula Broodfather | Tarantula Boots, Spider Talisman |
 | Wolf | Howling Cave | Sven Packmaster | Overflux, Hamster Wheel |
-| Enderman | The End | Voidgloom Seraph | Etherwarp, Enderman Sword |
+| Enderman | The End | Voidgloom Seraph | Etherwarp Conduit, Enderman Sword |
 | Blaze | Crimson Isle | Inferno Demonlord | Lava Flame (pet), Magma Lord Helmet |
-| Vampire | Vampiric Mine | Riftstalker Bloodfiend | Vampire Fang, Bat Person |
+| Vampire | Vampiric Mine (Rift) | Riftstalker Bloodfiend | Vampire Fang, Bat Person |
+
+</TableCard>
 
 ---
 
 ## Slayer Level Requirements
 
-Each slayer has 9 levels. XP accumulates across all kills of that type.
+Each slayer has 9 levels. XP accumulates across all bosses of that type.
 
 | Level | XP Required (cumulative) | Rank |
 |-------|--------------------------|------|
@@ -47,82 +53,118 @@ Each slayer has 9 levels. XP accumulates across all kills of that type.
 | 4 | 1,500 | Professional |
 | 5 | 5,000 | Expert |
 | 6 | 20,000 | Specialist |
-| 7 | 100,000 | Expert |
-| 8 | 400,000 | Master |
+| 7 | 100,000 | Master |
+| 8 | 400,000 | Veteran |
 | 9 | 1,000,000 | Grandmaster |
 
 ---
 
 ## Boss Tiers
 
-Each slayer type has 4 boss tiers (T1–T4). Higher tiers:
-- Give more Slayer XP per kill
-- Drop rarer items
-- Cost more coins to start (the quest fee)
-- Require your slayer level to be high enough to unlock
+Most slayers have 4 tiers (T1–T4). **Revenant Horror (Zombie) has a T5** — the only slayer with a fifth tier, dropping the rare **Warden Heart**.
+
+<Tabs>
+<Tab label="Standard (T1–T4)">
 
 | Tier | Slayer XP Given | Approx. Quest Cost | Req. Slayer Level |
 |------|----------------|-------------------|-------------------|
 | T1 | 5 | 100–500 coins | None |
 | T2 | 25 | 2,000 coins | Level 1 |
-| T3 | 100–200 | 10,000 coins | Level 2–3 |
-| T4 | 400–500 | 50,000 coins | Level 3–4 |
+| T3 | 100 | 10,000 coins | Level 2–3 |
+| T4 | 400 | 50,000 coins | Level 3–4 |
+
+</Tab>
+<Tab label="Revenant T5">
+
+Revenant Horror T5 is the hardest and most expensive slayer encounter.
+
+| Tier | Slayer XP | Quest Cost | Req. Level | Key Drop |
+|------|-----------|------------|------------|---------|
+| T5 | 600 | 100,000 coins | Level 7 | Warden Heart |
+
+The **Warden Heart** is used to craft the **Warden Helmet** — a powerful armor piece for endgame zombie/undead combat.
+
+</Tab>
+</Tabs>
 
 <Tip title="Run T3 until you can reliably kill T4">
-T4 gives 4–5× the XP of T3 but costs ~5× more. If your T4 kill time is very long (3+ min), the T3 rate is often better. Once you one-shot or two-shot T4, switch.
+T4 gives more XP but costs 5× more. If your T4 kill time exceeds 3 minutes, T3 is usually better XP/hr. Switch once you can one-shot or two-shot T4.
 </Tip>
 
 ---
 
 ## Recommended Progression Order
 
-1. **Zombie T2–T4** — cheapest, no special gear needed, great starter XP
-2. **Spider T1–T3** — drops Tarantula Boots which are essential mid-game combat boots
-3. **Wolf T1–T3** — drops Overflux (useful accessory) and Hamster Wheel
-4. **Enderman T1–T4** — drops Etherwarp (mobility) and Enderman Sword
-5. **Blaze T1–T4** — best in Crimson Isle, requires decent combat gear
-6. **Vampire** — unique mechanic (see below)
+<Steps steps={[
+  { label: "Zombie T2–T4", description: "Cheapest, no special gear needed, great starter XP. Aim for T4 fast.", status: "done" },
+  { label: "Spider T1–T3", description: "Drops Tarantula Boots — essential mid-game combat boots.", status: "done" },
+  { label: "Wolf T1–T3", description: "Drops Overflux (useful accessory) and Hamster Wheel (minion fuel).", status: "current" },
+  { label: "Enderman T1–T4", description: "Drops Etherwarp Conduit (mobility) and Enderman Sword.", status: "upcoming" },
+  { label: "Blaze T1–T4", description: "Best in Crimson Isle, requires decent combat gear.", status: "upcoming" },
+  { label: "Vampire", description: "Unique Rift-based mechanic — requires Rift access first.", status: "upcoming" }
+]} />
 
 ---
 
 ## Vampire Slayer — Different Mechanics
 
 The Vampire Slayer works differently from the others:
-- Vampires are found in the **Vampiric Mine** in the Rift dimension (requires Rift access).
-- The boss is the **Riftstalker Bloodfiend**.
-- Uses **Motes** (Rift currency) instead of regular coins for the quest fee.
-- Drops **Vampire Fang** (accessory) and other Rift-specific items.
+
+- Found in the **Vampiric Mine** inside the **Rift** dimension (requires Rift access)
+- Uses **Motes** (Rift currency) instead of coins for quest fees
+- Boss regenerates health — use **Garlic** and **Wooden Stake** items to counter it
+- Drops **Vampire Fang** and other Rift-specific accessories
 
 <Info title="Vampire requires Rift access">
-You must unlock the **Rift** dimension before doing Vampire Slayer. The Rift is a mid-to-late game area unlocked via a special quest chain.
+Unlock the Rift dimension first via the quest chain with Elise in the Hub. The Rift is a mid-to-late game area and has a separate inventory system.
 </Info>
 
 ---
 
 ## Key Slayer Drops Worth Targeting
 
-| Item | From | Why |
-|------|------|-----|
+<TableCard title="Best Drops to Farm" description="These drops are worth specifically targeting with your RNG meter or running a specific tier for.">
+
+| Item | From | Why It Matters |
+|------|------|----------------|
 | Tarantula Boots | Spider T2+ | Best combat boots until endgame |
-| Overflux | Wolf T3+ | Important accessory for speed builds |
-| Etherwarp Conduit | Enderman T4 | Teleport ability for the Aspect of the End |
+| Overflux | Wolf T3+ | Important speed build accessory |
+| Etherwarp Conduit | Enderman T4 | Teleport ability for Aspect of the End |
 | Enderman Sword | Enderman T1+ | Good early-mid weapon |
-| Vampire Fang | Vampire T2+ | Accessory, useful set bonus |
+| Warden Heart | Revenant T5 | Craft Warden Helmet for endgame |
+| Vampire Fang | Vampire T2+ | Accessory with useful set bonus |
 | Revenant Catalyst | Zombie T4 | Used in crafting undead-type weapons |
+
+</TableCard>
 
 ---
 
 ## RNG Meter
 
-The **RNG Meter** (unlocked at Slayer Level 3 for each type) lets you trade 10,000 kills worth of RNG into a **guaranteed rare drop**. It fills passively as you do slayer bosses and can be targeted to specific drops.
+The **RNG Meter** (unlocked at Slayer Level 3 for each type) lets you trade 10,000 kills worth of accumulated RNG into a **guaranteed rare drop** of your choice.
 
-<Tip title="Set your RNG meter target early">
-Decide which rare drop you want before you hit Level 3 and set the target immediately. The meter fills whether or not you have a target set — you can't retroactively claim filled meter for unset targets.
+<Details title="How does the RNG Meter work?">
+When you reach Slayer Level 3, an RNG Meter appears in your Slayer menu. It fills passively as you do boss kills. Once full, you can exchange it for one guaranteed rare drop from a list for that slayer type. You must **set a target** before it fills — unset meters can't be retroactively claimed.
+</Details>
+
+<Tip title="Set your RNG meter target immediately">
+The meter fills whether or not a target is set. Set it the moment you unlock it at Level 3 so you don't waste any accumulated progress.
 </Tip>
 
 ---
 
-## Useful Tools
+## Stats at a Glance
+
+<StatRow>
+  <Stat label="Slayer Types" value="6" note="Zombie, Spider, Wolf, Enderman, Blaze, Vampire" />
+  <Stat label="Max Level" value="9" note="1,000,000 XP to reach Grandmaster" />
+  <Stat label="Revenant Tiers" value="5" note="Only slayer with T5 (Warden Heart)" trend="up" />
+  <Stat label="RNG Meter Unlock" value="Lvl 3" note="Set target immediately after unlock" />
+</StatRow>
+
+---
+
+## Useful Links
 
 - [SkyCrypt](https://sky.shiiyu.moe/) — track your slayer levels and boss kill counts.
 - [COFL](https://sky.coflnet.com/) — check current prices for slayer drops.

@@ -60,3 +60,36 @@ export async function getAllPages(): Promise<PageContent[]> {
   const pages = await Promise.all(slugs.map(getPageContent));
   return pages.filter(Boolean) as PageContent[];
 }
+
+// ── Search ────────────────────────────────────────────────────────────────────
+
+export type SearchPageData = {
+  title: string;
+  description: string;
+  path: string;
+  tags: string[];
+  /** h2 section headings extracted from the MDX content */
+  sections: string[];
+};
+
+/**
+ * Build a search index from all MDX pages.
+ * Called server-side (layout/header) and passed as a prop to the client search component.
+ */
+export async function getSearchData(): Promise<SearchPageData[]> {
+  const pages = await getAllPages();
+  return pages.map((page) => {
+    // Extract ## headings — strips leading/trailing whitespace and any inline markdown
+    const headingMatches = [...page.content.matchAll(/^##\s+(.+)$/gm)];
+    const sections = headingMatches.map((m) =>
+      m[1].trim().replace(/[*_`~]/g, "")
+    );
+    return {
+      title: page.frontmatter.title ?? page.slug,
+      description: page.frontmatter.description ?? "",
+      path: `/${page.slug}`,
+      tags: page.frontmatter.tags ?? [],
+      sections,
+    };
+  });
+}

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { BookOpenText } from "lucide-react";
 import { SearchTrigger } from "./search-dialog";
 import { MobileNav } from "./header-nav";
+import { getSearchData } from "@/lib/content";
 
 const HEADER_LINKS = [
   { href: "/early", label: "Progression" },
@@ -12,7 +13,9 @@ const HEADER_LINKS = [
   { href: "/mods", label: "Mods" },
 ];
 
-export function SiteHeader() {
+export async function SiteHeader() {
+  const searchData = await getSearchData();
+
   return (
     <header className="sticky top-0 z-40 border-b bg-background/80 backdrop-blur-lg">
       <div className="mx-auto flex max-w-6xl items-center gap-4 px-4 py-3">
@@ -41,7 +44,7 @@ export function SiteHeader() {
         <div className="ml-auto" />
 
         {/* Search */}
-        <SearchTrigger />
+        <SearchTrigger data={searchData} />
 
         {/* Mobile hamburger */}
         <MobileNav />

@@ -1,26 +1,27 @@
 ---
 title: Mid Game
 description: You have basic gear and some coins — here's how to transition into mid game and what to focus on.
-lastUpdated: "2026-04-05"
-tags: [mid game, magic power, talisman, accessories, dungeons, slayers, progression]
+lastUpdated: "2026-04-06"
+tags: [mid game, magical power, talisman, accessories, dungeons, slayers, progression]
 ---
 
 ## You're in Mid Game If…
 
 - You have **Skill Average 20–35**
-- You can do **Dungeons Floor 4–5**
-- You have at least **100 Magic Power** from accessories
+- You can complete **Dungeons Floor 4–5**
+- You have at least **100 Magical Power** from accessories
 - You're earning **1–5M coins/hr** consistently
 
-Mid game is about **building your Magic Power**, pushing dungeons to Floor 6, and picking a money-making lane to fund endgame gear.
+Mid game is about **building your Magical Power**, pushing dungeons to Floor 6, and picking a money-making lane to fund endgame gear.
 
 ---
 
-## The Magic Power Wall
+## The Magical Power Wall
 
-**Magic Power (MP)** is the single most important mid-game stat. It comes entirely from accessories (talismans, rings, orbs, etc.) equipped in your Accessory Bag.
+**Magical Power (MP)** is the single most important mid-game stat. It comes entirely from accessories (talismans, rings, orbs, etc.) in your Accessory Bag. MP scales your combat stats logarithmically — every point helps, with the biggest relative gains at the start.
 
-Every accessory rarity gives different MP:
+<TableCard title="MP by Accessory Rarity">
+
 | Rarity | MP per piece |
 |--------|-------------|
 | Common | 3 |
@@ -29,29 +30,45 @@ Every accessory rarity gives different MP:
 | Epic | 12 |
 | Legendary | 16 |
 | Mythic | 22 |
-| Special | 3 |
-| Very Special | 5 |
 
-<Tip title="MP breakpoints matter">
-MP unlocks bonus stats at every 10-point milestone. At **300 MP** you unlock Strength/Crit scaling. At **500 MP** you unlock a major damage multiplier. Prioritize reaching 300, then 500.
+</TableCard>
+
+<Tip title="Hit 300 MP before buying expensive single upgrades">
+The 0–300 MP range gives the best stat gain per coin spent. Fill your bag with accessible accessories before chasing rare or expensive individual upgrades.
 </Tip>
 
 ---
 
 ## Mid Game Gear Targets
 
-| Slot | Early Mid | Late Mid |
-|------|----------|---------|
-| Weapon | Giant's Sword / AotD | Livid Dagger / Hyperion |
-| Armor | Strong Dragon | Shadow Assassin |
-| Pet | Lvl 100 Rare Tiger | Lvl 100 Leg. Tiger / Enderman |
-| Accessories | 50–100 fillers | Full Magical Power set |
+<Tabs>
+<Tab label="Early Mid">
+
+| Slot | Target |
+|------|--------|
+| Weapon | Giant's Sword / Aspect of the Dragon |
+| Armor | Strong Dragon Armor |
+| Pet | Lvl 100 Rare Tiger |
+| Accessories | 50–100 fillers, aim for 150+ MP |
+
+</Tab>
+<Tab label="Late Mid">
+
+| Slot | Target |
+|------|--------|
+| Weapon | Livid Dagger (F5) / Hyperion (F7) |
+| Armor | Shadow Assassin (F4) → Necron's |
+| Pet | Lvl 100 Legendary Tiger or Ender Dragon |
+| Accessories | Full Magical Power set, 300–500 MP |
+
+</Tab>
+</Tabs>
 
 ---
 
 ## Dungeons Progression
 
-Dungeons are the main mid-game content. Push floors in order — each unlock gives new gear.
+<TableCard title="Floor Requirements & Key Drops">
 
 | Floor | Catacombs Req. | Key Drop |
 |-------|----------------|---------|
@@ -63,8 +80,10 @@ Dungeons are the main mid-game content. Push floors in order — each unlock giv
 | F6 | Cata 24 | Necron / Maxor / Storm gear |
 | F7 | Cata 28 | Wither Blade / Hyperion |
 
+</TableCard>
+
 <Warning title="Class levels matter">
-Each dungeon class (Archer, Mage, Berserk, Healer, Tank) has its own level. Your class stats scale with your class level. Running your main class consistently is faster than rotating.
+Each dungeon class has its own level. Your stats scale with your class level — running your main class consistently is more efficient than rotating.
 </Warning>
 
 ---
@@ -73,55 +92,65 @@ Each dungeon class (Archer, Mage, Berserk, Healer, Tank) has its own level. Your
 
 Slayers are key mid-game content. They unlock gear, drop valuable items, and give Combat XP.
 
-**Recommended progression order:**
-1. **Zombie** (Revenant) — cheapest, easiest to start
-2. **Spider** (Tarantula) — drops Tarantula Boots, essential for combat
-3. **Wolf** (Sven) — drops Overflux, useful utility
-4. **Enderman** (Voidgloom) — drops Etherwarp / Enderman Sword
-5. **Blaze** (Inferno) — Crimson Isle content, hard but rewarding
-6. **Vampire** — requires defeating previous slayers first
+<Steps steps={[
+  { label: "Zombie (Revenant) T2–T4", description: "Cheapest and easiest. Great starter XP.", status: "done" },
+  { label: "Spider (Tarantula) T2–T3", description: "Drops Tarantula Boots — essential for combat.", status: "done" },
+  { label: "Wolf (Sven) T2–T3", description: "Drops Overflux and Hamster Wheel (minion fuel).", status: "current" },
+  { label: "Enderman (Voidgloom) T3–T4", description: "Drops Etherwarp Conduit and Enderman Sword.", status: "upcoming" },
+  { label: "Blaze (Inferno) T3–T4", description: "Crimson Isle content — hard but very rewarding.", status: "upcoming" }
+]} />
 
 <Info title="Slayer cost vs. profit">
-Slayer quests cost coins to start. Always check if your expected drops + XP value exceeds the startup cost. At T4, most slayers are profitable even without rare drops.
+Slayer quests cost coins to start. At T4, most slayers are profitable even without rare drops. Check expected drops + Slayer XP value vs. startup cost before running a new tier.
 </Info>
 
 ---
 
-## Building Magic Power (MP) Efficiently
+## Building Magical Power Efficiently
 
-1. **Check your current accessories** on SkyCrypt → `/skills` tab → Accessories section.
-2. **Remove duplicates** — each unique accessory type counts once only.
-3. **Upgrade rarities** — a Rare Talisman gives more MP than a Common one (recombobulate or upgrade).
-4. **Reforge** — most accessories benefit from the **Warped** reforge for MP efficiency.
-5. **Power Stone** — use a **Power Stone** that matches your playstyle (e.g., Sorrow for combat).
+<Checklist title="MP optimization checklist">
+- Check your current accessories on SkyCrypt → Accessories section
+- Remove all duplicates — only the highest rarity of each family counts
+- Fill empty bag slots with any accessible accessories
+- Reforge accessories to Warped for general use
+- Equip the right Power Stone for your activity
+- Upgrade the highest-rarity pieces you have with Recombobulator 3000
+- Use tuning points — don't leave them unspent
+</Checklist>
 
 ---
 
 ## Money Making in Mid Game
 
+<TableCard title="Mid Game Income Methods">
+
 | Method | Coins/hr | Requirements |
 |--------|---------|--------------|
 | Garden farming | 5–15M | Farming Fortune 300+, good hoe |
-| Gemstone mining | 3–8M | HOTM 7+, Drill, Crystal Hollows access |
+| Gemstone mining | 3–8M | HotM 7+, Drill, Crystal Hollows access |
 | Dungeons (F5–F6) | 3–7M | Cata 18–24, decent team |
-| Enderman Slayer T3 | 2–5M | Cheap enough to run profitably |
+| Enderman Slayer T3 | 2–5M | Ender gear, cheap enough to run profitably |
 | Lava Fishing | 1–3M | Fishing 30+, lava rod |
+
+</TableCard>
 
 ---
 
 ## Key Milestones to Hit
 
-- [ ] Unlock **Dwarven Mines** (give Rhys 15 enchanted ores)
-- [ ] Reach **Heart of the Mountain Level 5**
-- [ ] Clear **Dungeons Floor 5** for the first time
-- [ ] Reach **Slayer Level 5** in at least one type
-- [ ] Hit **300 Magic Power**
-- [ ] Unlock your **Garden** (Farming Islands quest)
-- [ ] Get a **Legendary pet** at Level 100
+<Checklist title="Mid game progression checklist">
+- Unlock Dwarven Mines (give Rhys 15 enchanted ores)
+- Reach Heart of the Mountain Level 5
+- Clear Dungeons Floor 5 for the first time
+- Reach Slayer Level 5 in at least one type
+- Hit 300 Magical Power
+- Unlock your Garden (Farming Islands quest)
+- Get a Legendary pet at Level 100
+</Checklist>
 
 ---
 
-## Useful Tools
+## Useful Links
 
 - [SkyCrypt](https://sky.shiiyu.moe/) — check your MP, skills, pets all in one place.
 - [COFL](https://sky.coflnet.com/) — best price tracker for accessories and gear.
